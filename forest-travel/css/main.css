@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+/* -------------- HEADER -------------- */
+
+.header {
+    position: relative;
+    padding-top: 52px;
+    background-color: #1a4f27;
+    max-width: 100%;
+    height: 800px;
+
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.logo {
+    float: left;
+    width: 270px;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+
+.logo-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation {
+    float: right;
+    width: 870px;
+    padding-top: 15px;
+    font-size: 22px;
+    text-align: right;
+}
+
+.navigation-link {
+    display: inline-block;
+    margin-right: 44px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation-link:last-child {
+    margin-right: 0;
+}
+
+.navigation-link:hover {
+    text-decoration: underline;
+}
+
+.header-content {
+    width: 1170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-title {
+    margin: 0;
+    margin-bottom: 22px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.header-subtitle {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.header-scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, 0);
+    width: 200px;
+    text-align: center;
+}
+
+.header-scroll-text {
+    margin-bottom: 12px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* -------- SECTION CONTENT ----------- */
+
+.section-content {
+    padding: 120px 0;
+}
+
+.content-row {
+    margin-bottom: 100px;
+}
+
+.content-row:last-child {
+    margin-bottom: 0;
+}
+
+.content-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.content-description {
+    width: 470px;
+}
+
+.content-img {
+    width: 570px;
+    padding-top: 15px;
+}
+
+.content-title {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #31405b;
+}
+
+.content-text {
+    margin-bottom: 50px;
+}
+
+.content-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #31405b;
+}
+
+.content-text a {
+    color: #138ece;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 50px;
+
+    background-color: #0ac883;
+    padding: 15px 41px 0 41px;
+    height: 50px;
+
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in;
+    box-shadow: 0px 8px 20px 0px rgba(24, 219, 148, 0.35);
+}
+
+.button:hover {
+    background-color: #159b6a;
+}
+
+/* -------- FOOTTER ----------- */
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding-top: 73px;
+    padding-bottom: 100px;
+    background-color: #265847;
+    color: #ffffff;
+}
+
+.footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer-left {
+    float: left;
+    width: 270px;
+}
+
+.footer-right {
+    float: right;
+    max-width: 870px;
+}
+
+.footer-right::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+
+.footer-about {
+    font-size: 16px;
+    line-height: 1.625;
+}
+
+.footer-col {
+    float: left;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.footer-col:last-child {
+    margin-right: 0;
+}
+
+.footer-col-info {
+    width: 200px;
+}
+
+.footer-col-services {
+    width: 240px;
+}
+
+.footer-col-contacts {
+    width: 200px;
+}
+
+.footer-title {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.footer-list-item {
+    margin-bottom: 15px;
+}
+
+.footer-list-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-list-link:hover {
+    text-decoration: underline
+}

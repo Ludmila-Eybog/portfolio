@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Портфолио</title>
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./fonts/fonts/mplus1p/mplus1p.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <header class="header ">
+    <!-- Подсветка пагинации -->
+    <ul id="page-nav">
+        <li class="active">
+            <a href="#header"></a>
+        </li>
+        <li>
+            <a href="#portfolio"></a>
+        </li>
+        <li>
+            <a href="#howwork"></a>
+        </li>
+        <li>
+            <a href="#contacts"></a>
+        </li>
+    </ul>
+    <!-- End Подсветка пагинации -->
+
+    <header class="header " id="header" id="top">
         <div class="header-nav">
             <div class="header-logo">
                 <a class="logo" href="#">
@@ -25,18 +42,21 @@
                     Главная</a>
                 <a class="menu-item" href="#works">
                     Работы</a>
-                <a class="menu-item" href="#">
+                <a class="menu-item" href="#contact">
                     Контакты</a>
             </div>
 
-            <div class="header-icons">
-                <a href="https://github.com/" target="blank">
-                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            <!-- social-icons -->
+            <div class="social-icons">
+                <a class="social-icons_nav social-icons_nav--gh" href="https://github.com/" target="_blank">
+                    <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
-                <a href="https://vk.com/id247602442" target="blank">
-                    <i class="fa fa-vk fa-2x" aria-hidden="true"></i>
+                <a class="social-icons_nav social-icons_nav--vk" href="https://vk.com/id247602442" target="_blank">
+                    <i class="fab fa-vk" aria-hidden="true"></i>
                 </a>
             </div>
+            <!-- End social-icons -->
+
         </div>
 
         <div class="container">
@@ -55,15 +75,18 @@
                     </h1>
 
                     <div class="header-text">
-                        <p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и
-                            выполнением ТЗ.</p>
+                        <p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с
+                            соблюдением сроков и выполнением ТЗ.</p>
                     </div>
 
-                    <div>
-                        <a href="#" class="button-link">Познакомиться</a>
-                        <button class="header-button">
-                            Контакты
-                        </button>
+                    <div class="header_button-link">
+                        <div class="button-link header_link_1">
+                            <a href="#skills" class="link_1">Познакомиться</a>
+                        </div>
+
+                        <div class="button-link header_link_2">
+                            <a href="#contact" class="link_2">Контакты</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,9 +98,8 @@
         </div>
 
         <div class="container">
-
             <!-- content-row -->
-            <div class="header-row_skills">
+            <div class="header-row_skills" id="skills">
 
                 <div class="header-skills">
                     <h3 class="header-title-3">
@@ -95,10 +117,15 @@
                         </ul>
                     </div>
 
-                    <div>
-                        <button class="header-button2">
+                    <div class="button-link header_link_1">
+                        <a href="./files/Резюме_Людмила_Ейбог.pdf" class="link_1">
                             Смотреть работы
-                        </button>
+                        </a>
+                    </div>
+                    <div class="button-link header_link_1">
+                        <a href="#!" class="link_1" download="resume.pdf">
+                            Резюме скачать
+                        </a>
                     </div>
                 </div>
 
@@ -107,18 +134,17 @@
                         На связи:
                     </h3>
 
-                    <div class="header-icons fa-color">
-                        <a href="https://github.com/" target="blank">
-                            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                    <!-- social-icons -->
+                    <div class="social-icons social-icons_skills">
+                        <a class="social-icons_gh" href="https://github.com/" target="_blank">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
 
-                        <a href="https://vk.com/id247602442" target="blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <a class="social-icons_vk" href="https://vk.com/id247602442" target="_blank">
+                            <i class="fab fa-vk"></i>
                         </a>
                     </div>
+                    <!-- End social-icons -->
 
                     <p>
                         <a class="header-link" href="mailto:ludm.nvkz@gmail.com">ludm.nvkz@gmail.com</a>
@@ -130,22 +156,24 @@
 
     </header>
 
-    <section class="portfolio ">
+    <section class="portfolio " id="portfolio">
         <div class="container">
             <div class="portfolio-row">
-                <h2 class="title-2">
-                    <a id="works"></a>
-                    <span class="line-bottom-2">Портфолио</span>
-                </h2>
+                <div class="portfolio-title">
+                    <h2 class="title-2">
+                        <a id="works"></a>
+                        <span class="line-bottom-2">Портфолио</span>
+                    </h2>
+                </div>
 
-                <div class="portfolio-works down50">
+                <div class="portfolio-works down50 pos">
                     <a class="portfolio-work filter" data-filter="all" href="#!">Все работы</a>
                     <a class="portfolio-work filter" data-filter=".boot" href="#!">Bootstrap</a>
                     <a class="portfolio-work filter" data-filter=".wp" href="#!">WordPress</a>
                     <a class="portfolio-work filter" data-filter=".front" href="#!">Frontend</a>
                 </div>
                 <div class="portfolio-works down60">
-                    <div class="portfolio-view-big">
+                    <div class="portfolio-view-big mix boot">
                         <div class="img-link down25">
                             <a href="./forest-travel/index.html">
                                 <img src="./img/portfolio/forest-travel.jpg"
@@ -153,53 +181,53 @@
                                 <button class="img-view">Смотреть проект</button>
                             </a>
                         </div>
-                        <a class="link-big" href="./forest-travel/index.html">Верстка &Prime;Форест тревел&Prime;</a>
+                        <a class="link-big" href="./forest-travel/index.html">Верстка "Форест тревел"</a>
                         <p>Верстка многостраничного сайта.</p>
                     </div>
 
-                    <div class="portfolio-view-big">
+                    <div class="portfolio-view-big mix wp front">
                         <div class="img-link down25">
                             <a href="./unit/index.html">
                                 <img src="./img/portfolio/unit.jpg" alt="Главная страница сайта “Юнит”">
                                 <button class="img-view">Смотреть проект</button>
                             </a>
                         </div>
-                        <a class="link-big" href="./unit/index.html">Верстка &Prime;Юнит&Prime;</a>
-                        <p>Верстка многостраничного сайта.</p>
+                        <a class="link-big" href="./unit/index.html">Сайт для коворкинга "Юнит"</a>
+                        <p>Верстка лендинга с адаптивом.</p>
                     </div>
                 </div>
 
                 <div class="portfolio-works">
-                    <div class="portfolio-view-micro portfolio-projects">
-                        <div class="img-link down15 mix front">
-                            <a href="#">
+                    <div class="portfolio-view-micro mix front">
+                        <div class="img-link down15">
+                            <a href="#!">
                                 <img src="./img/portfolio/projekt-3.jpg" alt="">
                                 <button class="img-view">Смотреть проект</button>
                             </a>
                         </div>
-                        <a class="link-micro" href="#">Верстка &Prime;Сайт-1&Prime;</a>
+                        <a class="link-micro" href="#!">Верстка &Prime;Сайт-1&Prime;</a>
                         <p>Верстка многостраничного сайта.</p>
                     </div>
 
-                    <div class="portfolio-view-micro portfolio-projects">
-                        <div class="img-link down15 mix wp">
-                            <a href="#">
+                    <div class="portfolio-view-micro mix wp">
+                        <div class="img-link down15">
+                            <a href="#!">
                                 <img src="./img/portfolio/projekt-4.jpg" alt="">
                                 <button class="img-view">Смотреть проект</button>
                             </a>
                         </div>
-                        <a class="link-micro" href="#">Верстка &Prime;Сайт-2&Prime;</a>
+                        <a class="link-micro" href="#!">Верстка &Prime;Сайт-2&Prime;</a>
                         <p>Верстка многостраничного сайта.</p>
                     </div>
 
-                    <div class="portfolio-view-micro portfolio-projects">
-                        <div class="img-link down15 mix boot">
-                            <a href="#">
+                    <div class="portfolio-view-micro mix boot front">
+                        <div class="img-link down15">
+                            <a href="#!">
                                 <img src="./img/portfolio/projekt-5.jpg" alt="">
                                 <button class="img-view">Смотреть проект</button>
                             </a>
                         </div>
-                        <a class="link-micro" href="#">Сайт для коворкинга &Prime;Мечта&Prime;</a>
+                        <a class="link-micro" href="#!">Верстка &Prime;Сайт-3&Prime;</a>
                         <p>Верстка лендинга.</p>
                     </div>
                 </div>
@@ -207,83 +235,77 @@
         </div>
     </section>
 
-    <section class="how-work">
+    <section class="how-work " id="howwork">
         <div class="container">
-            <div class="how-work-blocks">
-                <h2 class="title-2 down130">
-                    <span class="line-bottom-2">Как я работаю</span>
-                </h2>
+            <div class="how-work_blocks">
+                <div class="how-work_title">
+                    <h2 class="title-2">
+                        <span class="line-bottom-2">Как я работаю</span>
+                    </h2>
+                </div>
 
-
-                <div class="how-work-row ">
-                    <div class="how-work-block">
+                <div class="how-work_row">
+                    <div class="how-work_block stick">
                         <h4><span class="title-4">Оцениваю макет</span></h4>
-                        <p class="how-work-desc">Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p>
-                        <p class="how-work-time">Время: 2 - 4 часа</p>
-                    </div>
+                        <p class="how-work_desc">Оцениваю объем работы, сложность,<br> нюансы. Задаю вопросы.</p>
+                        <p class="how-work_time">Время: 2 - 4 часа</p>
 
-                    <div class="how-work-img">
-                        <div class="how-work-stick">
+                        <div class="how-work_img">
                             <img src="./img/how-work/icon-1.png" alt="Слои">
                         </div>
                     </div>
                 </div>
 
-                <div class="how-work-row ">
-                    <div class="how-work-block">
+                <div class="how-work_row">
+                    <div class="how-work_block">
                         <h4><span class="title-4">ТЗ, смета и график работ</span></h4>
-                        <p class="how-work-desc">Согласовываем техническое задание и график работ по проекту. Осмечиваю
+                        <p class="how-work_desc">Согласовываем техническое задание и графи<br>к работ по проекту.
+                            Осмечиваю
                             стоимость по этапам работы.</p>
-                        <p class="how-work-time">Время: 2 - 4 часа</p>
-                    </div>
+                        <p class="how-work_time">Время: 2 - 4 часа</p>
 
-                    <div class="how-work-img">
-                        <div class="how-work-stick">
+                        <div class="how-work_img">
                             <img src="./img/how-work/icon-2.png" alt="">
                         </div>
                     </div>
                 </div>
 
-                <div class="how-work-row ">
-                    <div class="how-work-block">
+                <div class="how-work_row">
+                    <div class="how-work_block">
                         <h4><span class="title-4">Вы держите руку на пульсе</span></h4>
-                        <p class="how-work-desc">Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое
+                        <p class="how-work_desc">Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в
+                            любое
                             время можете видеть актуальное состояние проекта и задач.</p>
-                        <p class="how-work-time">Время: 2 часа</p>
-                    </div>
+                        <p class="how-work_time">Время: 2 часа</p>
 
-                    <div class="how-work-img">
-                        <div class="how-work-stick">
+                        <div class="how-work_img">
                             <img src="./img/how-work/icon-3.png" alt="">
                         </div>
                     </div>
                 </div>
 
-                <div class="how-work-row ">
-                    <div class="how-work-block">
+                <div class="how-work_row">
+                    <div class="how-work_block">
                         <h4><span class="title-4">Выполняю каждый этап</span></h4>
-                        <p class="how-work-desc">Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик
+                        <p class="how-work_desc">Поочередно выполняю каждый этап работы. Передаю результаты.
+                            Заказчик
                             поизводит поэтапную оплату.</p>
-                        <p class="how-work-time">Время: 2 - 4 часа</p>
-                    </div>
+                        <p class="how-work_time">Время: 2 - 4 часа</p>
 
-                    <div class="how-work-img">
-                        <div class="how-work-stick">
+                        <div class="how-work_img">
                             <img src="./img/how-work/icon-4.png" alt="">
                         </div>
                     </div>
                 </div>
 
-                <div class="how-work-row ">
-                    <div class="how-work-block">
+                <div class="how-work_row">
+                    <div class="how-work_block">
                         <h4><span class="title-4">Финальное ревью проекта</span></h4>
-                        <p class="how-work-desc">Проект готов. Финальное ревью и полировка до идеального состояния.
+                        <p class="how-work_desc">Проект готов. Финальное ревью и полировка до идеального состояния.
                             Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p>
-                        <p class="how-work-time">Время: 2 - 4 часа</p>
-                    </div>
+                        <p class="how-work_time">Время: 2 - 4 часа</p>
 
-                    <div class="how-work-img">
-                        <div class="how-work-stick">
+                        <div class="how-work_img">
                             <img src="./img/how-work/icon-5.png" alt="">
                         </div>
                     </div>
@@ -292,61 +314,126 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
-            <h2 class="title-2">
-                <span class="line-bottom-2">Контакты</span>
-            </h2>
+            <div class="contacts-title">
+                <h2 class="title-2" id="contact">
+                    <span class="line-bottom-2">Контакты</span>
+                </h2>
+            </div>
 
             <div class="contacts-row">
-                <div class="contacts-row-left">
-                    <p class="contacts-row-desk">Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над
-                        проектом - напишите мне.</p>
-                    <ul>
-                        <li>
-                            <a href="mailto:ludm.nvkz@gmail.com">ludm.nvkz@gmail.com
-                            </a>
-                        </li>
-                        <li>Людмила Ейбог</li>
-                        <li>+7 (961) 700-90-11</li>
-                        <li>Россия, Новокузнецк, Кемеровская область</li>
-                    </ul>
 
-                    <div class="header-icons fa-color">
-                        <a href="https://github.com/" target="blank">
-                            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                <div class="contacts-row_left">
+                    <!-- <img src="./img/contacts/66-dots.png" alt=""> -->
+                    <p class="contacts-row_desk">
+                        Если вы ищите специалиста по верстке сайтов, front-end разработчика в
+                        команду или для работы над
+                        проектом - напишите мне.
+                    </p>
+
+                    <!-- definition -->
+                    <ul class="definition-list">
+                        <li class="definition-list_item">
+                            <div class="definition-list_def">Email</div>
+                            <div class="definition-list_desc">
+                                <a href="mailto:ludm.nvkz@gmail.com">ludm.nvkz@gmail.com
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="definition-list_item">
+                            <div class="definition-list_def">Skype</div>
+                            <div class="definition-list_desc"><a href="#!">Людмила Ейбог</a></div>
+                        </li>
+
+                        <li class="definition-list_item">
+                            <div class="definition-list_def">Телефон</div>
+                            <div class="definition-list_desc"><a href="#!">+7 (961) 700-90-11</a></div>
+                        </li>
+
+                        <li class="definition-list_item">
+                            <div class="definition-list_def">Адрес</div>
+                            <div class="definition-list_desc">Россия, г.Новокузнецк</div>
+                        </li>
+                    </ul>
+                    <!--  End definition  -->
+
+                    <!--  social-icons  -->
+                    <div class="social-icons">
+                        <a class="social-icons_gh" href="https://github.com/" target="_blank">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
 
-                        <a href="https://vk.com/id247602442" target="blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <a class="social-icons_vk" href="https://vk.com/id247602442" target="_blank">
+                            <i class="fab fa-vk"></i>
                         </a>
                     </div>
+                    <!--  End social-icons  -->
+
                 </div>
 
-                <div class="contacts-row-right">
-                    Ваш Email info@somemail.com
+                <!-- fake placeholder -->
+                <div class="contacts-row_right">
+                    <form class="contacts-form" action="mailto:ludm.nvkz@gmail.com" id="contact-form">
+                        <input type="hidden" name="project_name" value="">
+                        <input type="hidden" name="admin_email" value="ludm.nvkz@gmail.com">
+                        <input type="hidden" name="email_from" value="info@">
+                        <div class="form-row">
+                            <input class="form-row_input" type="text" name="email">
+                            <span class="fake-placeholder">Ваш Email</span>
+                        </div>
+
+                        <div class="form-row">
+                            <input class="form-row_input" type="text" name="theme">
+                            <span class="fake-placeholder">Тема сообщения</span>
+                        </div>
+
+                        <div class="form-row">
+                            <textarea class="form-row_input form-row_input--textarea" name="message" id=""
+                                rows="3"></textarea>
+                            <span class="fake-placeholder">Сообщение</span>
+                        </div>
+
+                        <input class="button-link contact-form_button-3 page-button page-button--color" type="submit"
+                            value="Отправить">
+                    </form>
+
+                    <div id="answer">
+                        <div class="contact-form_success">
+                            <!-- <h2>
+                            Форма отправлена успешно!<br>
+                            Мы свяжемся с&nbsp;Вами в&nbsp;ближайшее время!
+                            </h2> -->
+                        </div>
+
+                    </div>
+                    <!--End fake placeholder -->
                 </div>
             </div>
-        </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p class="footer-copyright">&copy; 2020 Людмила Ейбог</p>
-            <p>Веб-разработчик, занимаюсь версткой и созданием сайтов</p>
-            <p>Этот сайт сделан в рамках прохождения обучения по верстке на курсах от
+            <p class="footer-copyright">&copy; 2020 — Людмила Ейбог</p>
+            <p class="footer-desc_1">Веб-разработчик, занимаюсь версткой и созданием сайтов.</p>
+            <p class="footer-desc_2">Этот сайт сделан в рамках прохождения обучения по верстке на курсах от
                 <a class="footer-link" href="http://webcademy.ru/" target="_blank">WebCademy.ru</a>
             </p>
         </div>
+        <!--   Кнопка быстрой прокрутки вверх   -->
+        <div id="backTop">
+            <a href="#top">
+                <i class="fas fa-angle-double-up"></i>
+            </a>
+        </div>
+        <!--   End Кнопка быстрой прокрутки вверх   -->
     </footer>
     <script src="libs/jquery/jquery-3.0.0.min.js"></script>
-    <!-- <script src="https://kit.fontawesome.com/9b72afda33.js"></script> -->
+    <script src="https://kit.fontawesome.com/9b72afda33.js"></script>
     <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
     <script src="libs/jquery.validate/jquery.validate.js"></script>
-    <script src="js/gamburger.js"></script>
+    <!-- <script src="js/gamburger.js"></script> -->
     <script src="libs/nav.js/nav.js"></script>
     <script src="js/main.js"></script>
 </body>

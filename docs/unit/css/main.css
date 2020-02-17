@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -11,16 +10,9 @@ body {
   margin: 0 auto;
 }
 .column-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .relative {
   position: relative;
@@ -71,15 +63,9 @@ body {
   width: 100%;
   height: 100%;
   z-index: 9;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .header__top-buttons {
   position: absolute;
@@ -89,15 +75,9 @@ body {
 .header__search-button {
   position: absolute;
   top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center ;
-      -ms-flex-align: center ;
-          align-items: center ;
+  justify-content: center;
+  align-items: center ;
   width: 60px;
   height: 60px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -131,12 +111,8 @@ body {
   margin-bottom: 15px;
 }
 .header__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .header__form input {
   margin-right: 20px;
@@ -152,17 +128,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-weight: 700;
-  -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
-}
-.input::-webkit-input-placeholder {
-  color: #ffffff;
-}
-.input:-ms-input-placeholder {
-  color: #ffffff;
-}
-.input::-ms-input-placeholder {
-  color: #ffffff;
 }
 .input::placeholder {
   color: #ffffff;
@@ -185,7 +151,6 @@ body {
   text-transform: uppercase;
   line-height: 2.86;
   letter-spacing: 2.8px;
-  -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
 .button-submit:hover,
@@ -197,8 +162,7 @@ body {
   position: absolute;
   bottom: 120px;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   width: 32px;
   height: 48px;
 }
@@ -219,12 +183,8 @@ body {
   text-align: center;
 }
 .section-functional__benefits {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .section-functional__benefits > * {
   width: 270px;
@@ -240,15 +200,9 @@ body {
 .benefit__img {
   height: 100px;
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .benefit__title {
   margin: 0;
@@ -343,10 +297,8 @@ body {
   width: 140px;
   height: 140px;
   border: 2px solid black;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   position: absolute;
   top: 50%;
   left: -93px;
 }
-/*# sourceMappingURL=main.css.map */

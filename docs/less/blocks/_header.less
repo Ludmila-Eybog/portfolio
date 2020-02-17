@@ -8,11 +8,14 @@
     padding-top: 70px;
     margin: 0 auto;
     margin-bottom: 240px;
-    background-image: url(../../img/bg/line_1.jpg);
+
+    background-image: url("../img/bg/line_1.jpg");
     background-size: auto;
     background-position: center;
     background-repeat: repeat-y;
+
     z-index: 1;
+    overflow: hidden;
 }
 
 .header-nav {
@@ -35,7 +38,7 @@
     &::after {
         content: "";
         position: absolute;
-        bottom: 7px;
+        bottom: 4px;
         left: -5px;
         right: -5px;
         height: 10px;
@@ -78,66 +81,102 @@
 .menu-item::after {
     content: "";
     position: absolute;
-    bottom: 5px;
-    left: 0px;
+    bottom: 2px;
+    left: -5px;
     width: 0px;
     height: 6px;
     background-color: var(--yellow);
-    transition: 0.5s;
-    z-index: -1;
 }
 
 .menu-item:hover:after {
-    width: 100%;
-    color: var(--black);
+    width: 112%;
+    z-index: -1;
+    transition: .5s;
 }
 
 .menu-item:focus {
     border: 3px dotted var(--red);
 }
 
-.header-icons {
+// --- social-icons  
+.social-icons {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
 }
 
-i {
+.social-icons_nav {
     color: var(--black);
 }
 
-.fa-github {
+.social-icons_nav--gh {
     margin-right: 20px;
+    font-size: 30px;
 
-    &:hover {
-        color: #6cc644;
-    }
-
+    &:hover,
     &:active {
         color: #6cc644;
     }
 }
 
-.fa-vk {
-    &:hover {
-        color: #45668e;
-    }
+.social-icons_nav--vk {
+    font-size: 31px;
 
+    &:hover,
     &:active {
-        color: #45668e;
+        color: var(--blue);
     }
 }
 
-.fa-color {
+.social-icons_skills {
+    padding-top: 6px;
+    margin-left: 5px;
+    margin-bottom: 29px;
+}
+
+.social-icons_gh {
+    margin-right: 30px;
+    font-size: 52px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     color: var(--black);
+
+    &:hover,
+    &:active  {
+        color: #6cc644;
+    }
 }
 
-.fa-circle {
-    color: #4d76a1;
+.social-icons_vk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    width: 50px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    color: #fff;
+    transition: .5s;
+
+    &:hover,
+    &:active {
+        background-color: #7296bc;
+    }
 }
+
+.social-icons_vk i {
+    font-size: 30px;
+}
+// --- End social-icons  
 
 .header-row_revers {
     display: flex;
+    justify-content: space-between;
     flex-direction: row-reverse;
 
     margin: 0 auto;
@@ -147,25 +186,20 @@ i {
 .title-image {
     position: relative;
     width: 50%;
+    max-width: 457px;
     z-index: 1;
-}
-
-.title-image img {
-    margin-left: auto;
 }
 
 .title-image::after {
     content: "";
     position: absolute;
-    background-image: url(../../img/header/back.svg);
-    background-repeat: no-repeat;
-    top: 130px;
-    right: -130px;
+    top: 32%;
+    left: 30%;
 
-    width: 475px;
-    height: 410px;
+    width: 100%;
+    height: 100%;
 
-    background-image: linear-gradient(to top, hsla(192, 29%, 97%, 0.5) 0%, rgba(244, 248, 249, 0) 100%);
+    background-image: linear-gradient(to top, rgba(245, 249, 250, 0.5) 0%, rgba(244, 248, 249, 0) 100%);
     z-index: -1;
 }
 
@@ -198,25 +232,30 @@ i {
     font-size: 24px;
     font-weight: 500;
     color: #393f47;
+    max-width: 500px;
 
     line-height: 1.5;
-    text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
+    text-shadow: 0px 3px 42px rgba(255, 255, 255, 0.004);
+}
+
+.header_button-link {
+    display: flex;
+    flex-direction: row;
 }
 
 .button-link {
-    margin-right: 13px;
-    padding: 16px 38px;
-    height: 64px;
     border-radius: 32px;
-    background-color: var(--yellow);
-
     font-size: 22px;
     font-weight: 700;
-    color: var(--black);
-    line-height: 1.2;
-    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease;
+}
 
-    transition: background-color 0.2s ease-in;
+.header_link_1 {
+    display: inline-block;
+    margin-right: 21px;
+    padding: 15px 39px;
+    background-color: var(--yellow);
+    color: var(--black);
 
     &:hover {
         background-color: #ffd200;
@@ -227,29 +266,34 @@ i {
     }
 }
 
-.header-button {
-    padding: 0 36px;
-    height: 64px;
+.header_link_2 {
+    display: inline-block;
+    padding: 12px 37px;
     border: 4px solid #464646;
-    border-radius: 32px;
-
-    font-size: 22px;
-    font-weight: 700;
     color: #464646;
-    line-height: 1.2;
-    letter-spacing: 0.9px;
 
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+    &:hover {
+        border: 4px solid #797979;
+    }
+
+    &:active {
+        border: 4px solid #181818;
+    }
+}
+
+.link_1 {
+    color: var(--black);
+}
+
+.link_2 {
+    color: #464646;
 
     &:hover {
         color: #797979;
-        border: 4px solid #797979;
+    }
 
-        &:active {
-            color: #181818;
-            border: 4px solid #181818;
-        }
+    &:active {
+        color: #181818;
     }
 }
 
@@ -266,8 +310,11 @@ i {
 
 .header-row_skills {
     display: flex;
+    flex-direction: row;
     margin: 0 auto;
     width: 1140px;
+    padding-top: 70px;
+    margin-top: -70px;
 }
 
 .header-skills {
@@ -276,50 +323,29 @@ i {
 }
 
 .header-skills-desk {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     font-size: 24px;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.63;
 }
 
 .header-list-item {
-    position: relative;
+    position: relative;    
+    padding-left: 30px;
 
     &::before {
-        content: "—";
-        margin-right: 5px;
+        content: '';
+        position: absolute;
+        top: 19px;
+        left: -1px;
+        height: 2px;
+        width: 23px;
+        background-color: #000;
     }
 
     &:last-child {
         margin-bottom: 0;
     }
-}
-
-.header-button2 {
-    padding: 12px 37px;
-    height: 64px;
-    border-radius: 32px;
-    border: none;
-    background-color: var(--yellow);
-
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.4px;
-
-    transition: background-color 0.2s ease-in;
-
-    &:hover {
-        background-color: #ffd200;
-    }
-
-    &:active {
-        background-color: #e1bc10;
-    }
-}
-
-.header-social>.header-icons {
-    margin-bottom: 25px;
 }
 
 .header-link {
@@ -339,4 +365,3 @@ i {
         text-decoration: underline;
     }
 }
-

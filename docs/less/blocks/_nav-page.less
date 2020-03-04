@@ -1,9 +1,19 @@
 #page-nav {
-    position: fixed;
-    right: 80px;
-    top: 50%;
-    transform: translate(50%, -50%);
-    z-index: 100;
+    display: none;
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        display: inline;
+        position: fixed;
+        right: 20px;
+        top: 50%;
+        transform: translate(50%, -50%);
+        z-index: 10;
+    }
+
+    @media (min-width: 1440px) {
+        right: 80px;
+    }
 }
 
 #page-nav li {
@@ -26,23 +36,31 @@
 
 #backTop a {
     position: fixed;
-    bottom: 45px;
-    right: 40px;
-
+    right: 5px;
+    bottom: 5px;
     color: #89b4cb;
     font-size: 45px;
     font-weight: 900;
+    z-index: 5;
+
+    // Планшет
+    @media (min-width: 768px) {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    @media (min-width: 1200px) {
+        display: none;
+        right: 40px;
+        bottom: 45px;
+    }
 }
 
 #backTop a:hover {
     opacity: .5;
-} 
+}
 
 // .fa-angle-double-up::before {
 //     content: "\f102";
-//     font-family: fontAwesome;    
-// }
-
-// .noscroll {
-//     overflow: hidden;
+//     font-family: fontAwesome;
 // }

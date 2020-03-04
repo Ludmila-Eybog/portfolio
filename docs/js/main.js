@@ -75,7 +75,7 @@ $(document).ready(function () {
 
     // Функция AJAX запроса на сервер (отправка формы)
     function ajaxFormSubmit() {
-        let string = $("#contoct-form").serialize(); //Сохраняем данные, введенные в форму в строку.
+        let string = $("#contact-form").serialize(); //Сохраняем данные, введенные в форму в строку.
 
         // Формируем ajax запрос
         $.ajax({
@@ -106,5 +106,4 @@ $(document).ready(function () {
             $('#backTop').fadeOut();
         }
     })
-
 })

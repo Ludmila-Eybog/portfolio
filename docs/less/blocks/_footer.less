@@ -1,23 +1,50 @@
+.none {
+    display: none;
+}
+
 .footer {
+    margin: 0 auto;
     padding-bottom: 40px;
     background-color: #333333;
     color: #ffffff;
     font-size: 14px;
     letter-spacing: 1px;
+
+    // Планшет
+    @media (min-width: 768px) {
+        // max-width: 768px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        // max-width: 1600px;
+    }
 }
 
 .footer-copyright {
-    padding-top: 23px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    padding-top: 35px;
     font-size: 18px;
+
+    // Планшет
+    @media (min-width: 768px) {
+        padding-top: 33px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {       
+        margin-bottom: 12px;
+        padding-top: 20px;
+    }
 }
 
 .footer-desc_1 {
-    margin-bottom: 5px;
+    line-height: 1.8;
     opacity: .5;
 }
 
 .footer-desc_2 {
+    line-height: 1.9;
     opacity: .5;
 }
 

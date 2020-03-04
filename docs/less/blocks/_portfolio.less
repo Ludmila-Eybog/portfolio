@@ -4,53 +4,62 @@
 
 .portfolio {
     background-color: #f4f8f9;
+    padding-top: 45px;
+    padding-bottom: 80px;
+
+    // Планшет
+    @media (min-width: 768px) {
+        padding-top: 61px;
+        padding-bottom: 75px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        padding-top: 95px;
+        padding-bottom: 125px;
+    }
 }
 
 .portfolio-row {
-    padding-top: 95px;
     margin: 0 auto;
-    padding-bottom: 125px;
-    width: 1140px;
-}
+    max-width: 290px;
 
-.portfolio-title {
-    margin-bottom: 50px;
-    text-align: left;
-}
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+        max-width: 708px;
+    }
 
-.line-bottom-2 {
-    position: relative;
-    z-index: 2;
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 15px;
-        left: -5px;
-        right: -5px;
-        height: 12px;
-        background-color: #fbdc4d;
-        z-index: -1;
+    // Десктоп
+    @media (min-width: 1200px) {
+        max-width: 1140px;
     }
 }
 
 .portfolio-works {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 40px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-bottom: 60px;
+    }
 }
 
 .down50 {
     margin-bottom: 50px;
 }
 
-.down60 {
-    margin-bottom: 62px;
-}
-
-.pos {
-    justify-content: flex-start
-}
+// .down60 {
+//     margin-bottom: 62px;
+// }
 
 .portfolio-work {
     margin-right: 80px;
@@ -80,24 +89,60 @@
     }
 }
 
-.portfolio-view-big img {
-    margin-bottom: 20px;
-    background-color: #fdd446;
-    width: 556px;
-    height: 370px;
+.portfolio-view-big {
+    margin-bottom: 50px;
+    max-width: 290px;
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+        max-width: 338px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        // max-width: 560px;
+        max-width: 556px;
+    }
 }
 
-.down25 {
-    margin-bottom: 22px;
+.portfolio-view-big img {
+    background-color: #fdd446;
+    max-width: 290px;
+
+    // Планшет
+    @media (min-width: 768px) {
+        max-width: 338px;
+        // height: 240px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        max-width: 556px;
+        // height: 370px;
+    }
 }
 
 .down15 {
     margin-bottom: 20px;
 }
 
-.img-link a {
-    display: block;
+.img-link {
     position: relative;
+    margin-bottom: 20px;
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 15px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-bottom: 20px;
+    }
+}
+
+.img-link a {
 
     &:after {
         content: '';
@@ -115,9 +160,17 @@
     .img-view {
         content: '';
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        left: 27%;
+        // right: 0;
+        top: 0;
+        // bottom: 0;
+        // margin: auto;
+
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);  
+
+        // transform: translate(59%, -100%);
 
         width: 254px;
         height: 52px;
@@ -131,13 +184,18 @@
         padding: auto;
 
         opacity: 0;
-        z-index: 2;
-
+        z-index: 2; 
+        transition: all 0.4s ease-in-out;       
+        
         &:hover {
+            transform: translateY(59%);
+            // top: 50%;
+
             background-color: var(--red);
             color: #ffffff;
             opacity: 1;
-            transition: 0.5s;
+            
+            // transition: 0.5s;     
         }
 
         &:active {
@@ -154,43 +212,135 @@
         opacity: 1;
         transition: 0.5s;
     }
+
+    // Планшет
+    @media (min-width: 768px) {
+        // transform: scale(0.6);
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        //    transform: scale(1);
+    }
 }
 
 .mix {
     display: none;
 }
 
+.link-top {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
 .link-big {
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 800;
     color: var(--black);
 
     &:hover {
         color: var(--red);
+    }
+
+    // Планшет
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        font-size: 32px;
     }
 }
 
 .portfolio-view-big p {
-    font-size: 22px;
+    padding-top: 3px;
+    font-size: 16px;
     font-weight: 400;
+
+    // Планшет
+    @media (min-width: 768px) {
+        padding-top: 8px;
+        font-size: 18px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        padding-top: 4px;
+        font-size: 22px;
+    }
 }
 
 .portfolio-view-micro {
-    width: 360px;
-    height: auto;
+    width: 290px;
+
+    &:last-child {
+        margin-bottom: 37px;
+    }
+
+    // Планшет
+    @media (min-width: 768px) {
+        width: 340px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        width: 360px;
+        height: auto;
+    }
 }
 
 .link-micro {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 800;
     color: var(--black);
 
     &:hover {
         color: var(--red);
     }
+
+    // Планшет
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        font-size: 26px;
+    }
+
 }
 
 .portfolio-view-micro p {
-    font-size: 20px;
+    padding-top: 3px;
+    font-size: 16px;
     font-weight: 400;
+
+    // Планшет
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        font-size: 20px;
+    }
+}
+
+.portfolio-link {
+    color: var(--black);
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 500;   
+
+    &:hover {
+        color: #039be3;
+        text-decoration: underline;
+    }
 }

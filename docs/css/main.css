@@ -2252,12 +2252,6 @@ a {
     width: 552px;
   }
 }
-@media (min-width: 1200px) {
-  .innpage-left_style {
-    position: absolute;
-    left: 30px;
-  }
-}
 @media (min-width: 768px) {
   .innpage-right {
     margin-bottom: 40px;

@@ -1,0 +1,524 @@
+.innpage {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 0px;
+
+    // Планшет
+    @media (min-width: 768px) {
+        width: 768px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        width: auto;
+        padding-top: 70px;
+
+        background-image: url("../img/bg/line_1.jpg");
+        background-size: auto;
+        background-position: center;
+        background-repeat: repeat-y;
+        z-index: 1;
+    }
+}
+
+.innpage #nav-menu-toggle {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    display: block;
+
+    // Планшет
+    @media (min-width: 768px) {
+        top: 40px;
+        right: 40px;
+    }
+
+    @media(min-width: 1200px) {
+        display: none;
+    }
+}
+
+.header-nav_innpage {
+    margin-bottom: 50px;
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 50px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-bottom: 85px;
+    }
+}
+
+.badges {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 50px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-bottom: 87px;
+    }
+}
+
+.badge {
+    margin-right: 10px;
+    padding: 3px 10px;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: "Roboto";
+    color: #ffffff;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.badge-html {
+    background-color: #ff861a;
+}
+
+.badge-css {
+    background-color: #039be5;
+}
+
+.badge-boot {
+    background-color: #a062c7;
+}
+
+.badge-js {
+    background-color: #ffd200;
+    color: #000000;
+}
+
+.badge-jquery {
+    background-color: #044d85;
+}
+
+.badge-php {
+    background-color: #777bb4;
+}
+
+.innpage-row {
+    margin-bottom: 57px;
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-bottom: 117px;
+        width: 1140px;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+.innpage-left {
+    position: relative;
+    margin-bottom: 55px;
+    // background-color: #039be5;
+    background-color: rgba(3, 154, 229, 0.2);
+    box-shadow: 20px 20px 100px 0px rgba(196, 219, 233, 1);
+    z-index: 2;
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin: 0 auto;
+        margin-bottom: 55px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        width: 552px;
+        // width: 652px;
+    }
+}
+
+.innpage-left_style {
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        position: absolute;
+        left: 30px;
+    }
+}
+
+.innpage-right {
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 708px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-bottom: 0;
+        display: block;
+        width: 460px;
+    }
+}
+
+.unit-page {
+
+    // Планшет
+    @media (min-width: 768px) {
+        // margin: 0 auto;
+        width: 100%;
+        transform: translateX(75px);
+        transform: scaleX(1.1);
+        overflow: hidden;
+        // background-color: rgba(3, 154, 229, 0.2);
+        z-index: 3;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        padding-top: 130px;
+        transform: scale(1);
+    }
+}
+
+.unit-full_page {
+    display: none;
+
+    // Планшет
+    @media (min-width: 768px) {
+        display: block;
+        position: absolute;
+        top: -200px;
+        right: -40px;
+        transform: scale(0.7);
+        box-shadow: 20px 20px 100px 15px rgba(196, 219, 233, 1);
+        z-index: 4;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        // height: 515px;
+        top: 50px;
+        right: -45px;
+        transform: scale(1);
+    }
+}
+
+.innpage_links-project {
+
+    // Планшет
+    @media (min-width: 768px) {
+        width: 340px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        width: 460px;
+    }
+}
+
+.innpage-links {
+    margin-bottom: 38px;
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 43px;
+        width: 340px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-top: 5px;
+        margin-bottom: 45px;
+    }
+}
+
+.innpage-links>.title-5 {
+    margin-bottom: 8px;
+}
+
+.innpage-link {
+    display: flex;
+    flex-direction: column;
+}
+
+//  social icons
+.social-icons_nav--brws {
+    align-items: center;
+    margin-right: 15px;
+    font-size: 28px;
+    color: var(--black);
+
+    transition: .5s;
+}
+
+.social-icons_nav--gh {
+    align-items: center;
+    margin-right: 15px;
+}
+
+//  End social icons
+
+.link {
+    font-size: 18px;
+    color: #2a87b4;
+    text-decoration: underline;
+}
+
+.innpage-project {
+    margin-bottom: 38px;
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-bottom: 55px;
+    }
+}
+
+.innpage-project>.title-5 {
+    margin-bottom: 15px;
+}
+
+.innpage-desc {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.innpage-details {
+
+    // Планшет
+    @media (min-width: 768px) {
+        width: 340px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        width: 460px;
+    }
+}
+
+.innpage-details>.title-5 {
+    margin-bottom: 22px;
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+
+.innpage-details_item {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    // Планшет
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {}
+}
+
+.innpage-details_def {
+    font-size: 16px;
+    color: #161616;
+    font-weight: 800;
+
+    width: 35%;
+    // width: 165px;  
+}
+
+.innpage-details_desc {
+
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(22, 22, 22);
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 10px;
+        width: 65%;
+
+        &:last-child {
+            // margin-bottom: 0;
+        }
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+}
+
+.item {
+    color: #039be5;
+    text-decoration: underline;
+}
+
+.pgn-row {
+    margin-bottom: 50px;
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 75px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-bottom: 95px;
+    }
+}
+
+.pgn_page-view {
+    padding: 15px 62px;
+    background-color: #333333;
+    text-align: center;
+
+    // Планшет
+    @media (min-width: 768px) {
+        padding: 14px 0;
+        width: ~"calc(50% - 15px)";
+        flex-shrink: 0;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        // padding: 24px 170px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.pgn_page-view a {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto";
+    color: #feffff;
+
+    // Планшет
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        font-size: 22px;
+    }
+}
+
+.pgn_view-1 {
+    display: none;
+
+    // Планшет
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
+.pgn_view-2 {}
+
+.innpage_footer {
+    font-family: "Roboto";
+    text-align: center;
+
+    // Планшет
+    @media (min-width: 768px) {
+        //     font-size: 36px;
+    }
+
+    // // Десктоп
+    // @media (min-width: 1200px) {
+    //     font-size: 42px;
+    // }
+}
+
+.innpage_foot1 {
+    margin-bottom: 8px;
+    font-size: 28px;
+    font-weight: 700;
+
+    // Планшет
+    @media (min-width: 768px) {
+        font-size: 36px;
+        letter-spacing: 1.1px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-bottom: 10px;
+        font-size: 42px;
+    }
+}
+
+.innpage_foot2 {
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: 200;
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-bottom: 30px;
+        font-size: 38px;
+    }
+}
+
+.link-2 {
+    color: #4298e8;
+    text-decoration: underline;
+}
+
+.innpage_foot {
+    justify-content: center;
+}
+
+.innpage_bg {
+
+    // Планшет
+    @media (min-width: 768px) {
+        margin: 0 auto;
+        margin-top: -60px;
+        position: relative;
+        z-index: -1;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-top: -130px;
+        max-width: 1600px;
+    }
+}

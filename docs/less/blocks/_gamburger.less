@@ -12,7 +12,7 @@
   width: 55px;
   height: 40px;
   font-size: 0;
-  text-indent: -9999px;
+  // text-indent: -9999px;
   appearance: none;
   box-shadow: none;
   border-radius: none;
@@ -61,7 +61,7 @@
 /**
  * Style 2
  */
-.cmn-toggle-switch__htx { 
+.cmn-toggle-switch__htx {
   background-color: transparent;
 }
 
@@ -70,8 +70,8 @@
 }
 
 .cmn-toggle-switch__htx span::before,
-.cmn-toggle-switch__htx span::after { 
-  transition-duration: 0.3s, 0.3s; 
+.cmn-toggle-switch__htx span::after {
+  transition-duration: 0.3s, 0.3s;
   transition-delay: 0.3s, 0;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .cmn-toggle-switch__htx.active span::after {
-  bottom: 0;  
+  bottom: 0;
   transform: rotate(-45deg);
 }
 
@@ -113,7 +113,7 @@
   top: 53px;
   right: 15px;
   display: block;
-  
+
   // Планшет
   @media (min-width: 768px) {
     right: 40px;        
@@ -123,3 +123,19 @@
     display: none;
   }
 }
+
+// .cmn-toggle_mobile {
+//   position: absolute;
+//   top: 53px;
+//   right: 15px;
+//   display: block;
+
+//   //   // Планшет
+//   @media (min-width: 768px) {
+//     right: 40px;
+//   }
+
+//   @media(min-width: 1200px) {
+//     display: none;
+//   }
+// }

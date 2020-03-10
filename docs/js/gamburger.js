@@ -22,6 +22,7 @@
     const mobileMenu = document.querySelector('.mobile-nav')
 
     mobileMenuToggle.addEventListener('click', function () {
+        
         if (this.classList.contains('active')) {
             mobileMenu.classList.add('active')
             overlayElement.classList.add('active')
@@ -35,6 +36,7 @@
     })
 
     mobileMenu.addEventListener('click', function () {
+        
         this.classList.remove('active')
         overlayElement.classList.remove('active')
         mobileMenuToggle.classList.remove('active')

@@ -1,6 +1,6 @@
 .contacts {
     position: relative;
-   
+
     padding-top: 43px;
     padding-bottom: 60px;
 
@@ -19,7 +19,7 @@
     // Десктоп
     @media (min-width: 1200px) {
         padding-top: 127px;
-        padding-bottom: 150px;
+        padding-bottom: 150px;       
 
         &:before {
             content: "";
@@ -35,7 +35,7 @@
     }
 }
 
-.contacts-row {    
+.contacts-row {
     // min-width: 290px;
 
     // Планшет
@@ -59,13 +59,13 @@
     z-index: 3;
 
     // Планшет
-    @media (min-width: 768px) {       
+    @media (min-width: 768px) {
         width: 290px;
     }
 
     // Десктоп
     @media (min-width: 1200px) {
-        padding-top: 29px;       
+        padding-top: 29px;
         width: 510px;
     }
 }
@@ -75,8 +75,8 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.63;
-    // hyphens: auto;
-    word-break: break-all;
+    hyphens: auto;
+    // word-break: break-all;
 
     // Планшет
     @media (min-width: 768px) {
@@ -84,7 +84,7 @@
         margin-bottom: 30px;
         font-size: 18px;
         line-height: 1.57;
-        word-break: normal;
+        // word-break: normal;
     }
 
     // Десктоп
@@ -99,6 +99,7 @@
 .contacts-list {
     margin-bottom: 33px;
     font-size: 18px;
+
 
     // Планшет
     @media (min-width: 768px) {
@@ -116,6 +117,7 @@
 
     // Планшет
     @media (min-width: 768px) {
+        display: flex;
         flex-direction: column;
         margin-bottom: 10px;
     }
@@ -145,6 +147,8 @@
 .contacts-list_desc {
     color: #96969d;
     font-weight: 500;
+    margin-right: 0;
+    width: 300px;
 }
 
 .contacts-list_desc a {
@@ -347,7 +351,7 @@
 
     // Планшет
     @media (min-width: 768px) {
-        padding: 15px 90px;        
+        padding: 15px 90px;
     }
 
     // Десктоп

@@ -1,13 +1,19 @@
 .about-me {
     position: relative;
-    padding-top: 42px;
-    padding-bottom: 95px;
+    padding-top: 0;
+    padding-bottom: 55px;
     overflow: hidden;
+    
+    @media (min-width: 580px) {
+        padding-top: 20px;
+        padding-bottom: 95px;
+    }
 
     // Планшет
     @media (min-width: 768px) {
         width: 768px;
         margin: 0 auto;
+        padding-top: 30px;
         padding-bottom: 85px;
     }
 
@@ -350,12 +356,12 @@
 
     &:hover {
         color: #039be3;
-        text-decoration: underline;
+        // text-decoration: underline;
     }
 
     &:active {
         color: #ea655f;
-        text-decoration: underline;
+        // text-decoration: underline;
     }
 
     // Планшет

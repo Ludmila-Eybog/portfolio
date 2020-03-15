@@ -110,12 +110,17 @@
 /******конец иконки Гамбургер******/
 #nav-menu-toggle {
   position: absolute;
-  top: 53px;
+  top: 10px;
   right: 15px;
   display: block;
 
+  @media (min-width: 580px) {
+    top: 30px;
+}
+
   // Планшет
   @media (min-width: 768px) {
+    top: 40px;
     right: 40px;        
   }
 

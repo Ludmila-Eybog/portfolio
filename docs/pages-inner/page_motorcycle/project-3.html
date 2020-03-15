@@ -96,8 +96,8 @@
 
         <div class="container">
             <h3 class="title-3">
-                <span class="line-bottom-3">Верстка карточки</span><br>
-                <span class="line-bottom-3">"Motorcycle"</span>
+                <span>Верстка карточки</span><br class="hide-desk">
+                <span>"Motorcycle"</span>
             </h3>
 
             <div class="badges">
@@ -109,12 +109,12 @@
                 <!-- <div class="badge badge-php">PHP</div>                -->
             </div>
 
-            <div class="innpage-row">
-                <div class="innpage-left innpage-left_style">
+            <div class="innpage-row_moto">
+                <div class="innpage-left">
                     <img src="../../img/project-page/motorcycle.jpg" alt="Карточка Мотоцикл">
                 </div>
 
-                <div class="innpage-right">
+                <div class="innpage-right_moto">
                     <div class="innpage_links-project">
                         <div class="innpage-links">
                             <h5 class="title-5">Ссылки на проект</h5>
@@ -145,7 +145,7 @@
 
                         <div class="innpage-project">
                             <h5 class="title-5">О проекте</h5>
-                            <p class="innpage-desc">Учебный макет для карточки Мотоцикл.<br>
+                            <p class="innpage-desc">Учебный макет карточки Мотоцикл.<br>
                                  Десктоп-версия.
                             </p>
                         </div>
@@ -162,12 +162,12 @@
                                 <div class="innpage-details_def">Проект:</div>
                                 <div class="innpage-details_desc">Карточка "Motorcycle"</div>
                             </li>
-                            <li class="innpage-details_item">
+                            <!-- <li class="innpage-details_item">
                                 <div class="innpage-details_def">Сайт:</div>
                                 <div class="innpage-details_desc">
                                     <a href="#!" class="item">xxx.com</a>
                                 </div>
-                            </li>
+                            </li> -->
                             <li class="innpage-details_item">
                                 <div class="innpage-details_def">Верстка:</div>
                                 <div class="innpage-details_desc">HTML5, CSS3.</div>
@@ -182,13 +182,13 @@
 
             </div>
 
-            <div class="pgn-row">
-                <div class="pgn_page-view pgn_view-1">
-                    <a href="../page_forest-travel/project-1.html">Предыдущий проект</a>
-                </div>
-                <!-- <div class="pgn_page-view pgn_view-2">
-                    <a href="#"><span>Следующий проект</span></a>
-                </div> -->
+            <div class="pgn-row pgn-row1">
+                <a class="pgn_page-view pgn_view-1"  href="../page_unit/project-2.html">
+                   <span>Предыдущий проект</span>
+                </a>
+                <!-- <a class="pgn_page-view pgn_view-2" href="#!">
+                    <span>Следующий проект</span>
+                </a>   -->
             </div>
         </div>
 
@@ -213,6 +213,14 @@
             <div class="innpage_bg">
                 <img src="../../img/bg/bg.png" alt="Фотография рабочего места">
             </div>
+
+            <!--   Кнопка быстрой прокрутки вверх   -->
+        <div id="backTop">
+            <a href="#top">
+                <i class="fas fa-angle-double-up"></i>
+            </a>
+        </div>
+        <!--   End Кнопка быстрой прокрутки вверх   -->
         </footer>
     </section>
 

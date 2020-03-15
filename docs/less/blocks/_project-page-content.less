@@ -1,7 +1,11 @@
 .innpage {
     position: relative;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 0px;
+
+    @media (min-width: 580px) {
+        padding-top: 20px;
+    }
 
     // Планшет
     @media (min-width: 768px) {
@@ -20,23 +24,6 @@
         background-position: center;
         background-repeat: repeat-y;
         z-index: 1;
-    }
-}
-
-.innpage #nav-menu-toggle {
-    position: absolute;
-    top: 30px;
-    right: 15px;
-    display: block;
-
-    // Планшет
-    @media (min-width: 768px) {
-        top: 40px;
-        right: 40px;
-    }
-
-    @media(min-width: 1200px) {
-        display: none;
     }
 }
 
@@ -62,7 +49,7 @@
 
     // Планшет
     @media (min-width: 768px) {
-        margin-bottom: 50px;
+        margin-bottom: 80px;
     }
 
     // Десктоп
@@ -123,73 +110,95 @@
     }
 }
 
+.innpage-row_moto {
+    margin-bottom: 57px;
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-bottom: 117px;
+        width: 1140px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 .innpage-left {
     position: relative;
     margin-bottom: 55px;
-    // background-color: #039be5;
-    background-color: rgba(3, 154, 229, 0.2);
-    box-shadow: 20px 20px 100px 0px rgba(196, 219, 233, 1);
+    // background-color: rgba(3, 154, 229, 0.2);
     z-index: 2;
 
     // Планшет
     @media (min-width: 768px) {
-        margin: 0 auto;
-        margin-bottom: 55px;
+        margin-right: 0;
+        margin-bottom: 90px;
     }
 
     // Десктоп
     @media (min-width: 1200px) {
         width: 552px;
         // width: 652px;
+        margin-bottom: 0px;
     }
 }
 
-.innpage-left_style {
-
-    // Десктоп
-    @media (min-width: 1200px) {
-        // position: absolute;
-        // left: 30px;
-    }
-}
-
-.innpage-right {
+.innpage-right,
+.innpage-right_moto {
+    margin: 0 auto;
+    max-width: 400px;
 
     // Планшет
     @media (min-width: 768px) {
-        margin-bottom: 40px;
+        // margin-bottom: 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
-        width: 708px;
+        max-width: 708px;
     }
 
     // Десктоп
     @media (min-width: 1200px) {
         margin-bottom: 0;
+        margin-left: 0;
         display: block;
         width: 460px;
     }
 }
 
+.innpage-right_moto {
+
+    // Десктоп
+    @media (min-width: 1200px) {
+        margin-right: 0;
+    }
+}
+
+.forerst-page {
+    box-shadow: 20px 20px 100px 0px rgba(196, 219, 233, 1);
+}
+
 .unit-page {
+    margin: 0 auto;
+    max-width: 552px;
+    box-shadow: 20px 20px 100px 0px rgba(196, 219, 233, 1);
 
     // Планшет
     @media (min-width: 768px) {
         // margin: 0 auto;
-        width: 100%;
-        transform: translateX(75px);
         transform: scaleX(1.1);
-        overflow: hidden;
+        // transform: translateX(-50px);       
+        // overflow: hidden;
         // background-color: rgba(3, 154, 229, 0.2);
         z-index: 3;
     }
 
     // Десктоп
     @media (min-width: 1200px) {
-        padding-top: 130px;
-        transform: scale(1);
+        margin-top: 130px;
+        transform: scaleX(1);
     }
 }
 
@@ -201,8 +210,8 @@
         display: block;
         position: absolute;
         top: -200px;
-        right: -40px;
-        transform: scale(0.7);
+        right: -25px;
+        transform: scale(0.65);
         box-shadow: 20px 20px 100px 15px rgba(196, 219, 233, 1);
         z-index: 4;
     }
@@ -211,7 +220,7 @@
     @media (min-width: 1200px) {
         // height: 515px;
         top: 50px;
-        right: -45px;
+        right: 0px;
         transform: scale(1);
     }
 }
@@ -382,10 +391,6 @@
     // Планшет
     @media (min-width: 768px) {
         margin-bottom: 75px;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 
     // Десктоп
@@ -394,16 +399,39 @@
     }
 }
 
+.pgn-row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pgn-row2 {
+
+    // @media (miv-width: 635px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // }
+}
+
 .pgn_page-view {
-    padding: 15px 62px;
+    display: inline-block;
+    // padding: 15px 62px;
     background-color: #333333;
     text-align: center;
 
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto";
+    color: #feffff;
+
+    width: ~"calc(50% - 15px)";
+    padding: 14px 0;
+
     // Планшет
-    @media (min-width: 768px) {
-        padding: 14px 0;
-        width: ~"calc(50% - 15px)";
-        flex-shrink: 0;
+    @media (min-width: 635px) {
+        padding: 17px 0;
+        // flex-shrink: 0;
     }
 
     // Десктоп
@@ -411,36 +439,27 @@
         // padding: 24px 170px;
         padding-top: 24px;
         padding-bottom: 24px;
-    }
-}
 
-.pgn_page-view a {
-    font-size: 18px;
-    font-weight: 400;
-    font-family: "Roboto";
-    color: #feffff;
-
-    // Планшет
-    @media (min-width: 768px) {
-        font-size: 18px;
-    }
-
-    // Десктоп
-    @media (min-width: 1200px) {
         font-size: 22px;
     }
 }
 
-.pgn_view-1 {
+.page-view1 {
     display: none;
 
-    // Планшет
     @media (min-width: 768px) {
         display: block;
     }
 }
 
-.pgn_view-2 {}
+.page-view2 {
+    margin: 0 auto;
+    // max-width: 400px;
+
+    @media (min-width: 768px) {
+        margin: 0;
+    }
+}
 
 .innpage_footer {
     font-family: "Roboto";

@@ -7,9 +7,9 @@
     flex-direction: row;
     justify-content: space-between;
 
-    margin-bottom: 27px;
+    margin-bottom: 25px;
     padding-left: 20px;
-    padding-right: 33px;
+    padding-right: 20px;
 
     // Планшет
     @media (min-width: 768px) {
@@ -149,7 +149,7 @@
     bottom: 0;
     width: 40%;
     min-width: 320px;
-    padding: 43px 25px;
+    padding: 0px 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -158,6 +158,14 @@
 
     transform: translateY(-100%);
     transition: .5s;
+
+    @media (min-width: 580px) {
+        padding: 20px 25px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 30px 25px;
+    }
 }
 
 .mobile-nav.active {
@@ -166,7 +174,10 @@
 
 .mobile-nav>.header-logo {
     margin-bottom: 35px;
-    top: -13px;
+
+    @media (min-width: 768px) {
+        // top: 0px;
+    }
 }
 
 .menu-item_mobile-nav {

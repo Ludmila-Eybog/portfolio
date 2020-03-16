@@ -901,9 +901,11 @@ a {
 }
 .about-me_link:hover {
   color: #039be3;
+  text-decoration: underline;
 }
 .about-me_link:active {
   color: #ea655f;
+  text-decoration: underline;
 }
 @media (min-width: 768px) {
   .about-me_link {
@@ -1121,6 +1123,7 @@ a {
 }
 .link-big:hover {
   color: var(--red);
+  text-decoration: underline;
 }
 @media (min-width: 768px) {
   .link-big {
@@ -1176,6 +1179,7 @@ a {
 }
 .link-micro:hover {
   color: var(--red);
+  text-decoration: underline;
 }
 @media (min-width: 768px) {
   .link-micro {
@@ -1211,6 +1215,10 @@ a {
 }
 .portfolio-link:hover {
   color: #039be3;
+  text-decoration: underline;
+}
+.portfolio-link:active {
+  color: #ea655f;
   text-decoration: underline;
 }
 .how-work {
@@ -1839,8 +1847,11 @@ a {
   opacity: .5;
 }
 .footer-link {
-  color: #fff;
+  color: #ffffff;
   text-decoration: underline;
+}
+.footer-link:hover:active {
+  opacity: 1;
 }
 #page-nav {
   display: none;
@@ -2423,6 +2434,10 @@ a {
   color: #2a87b4;
   text-decoration: underline;
 }
+.link:hover {
+  color: #ea655f;
+  text-decoration: underline;
+}
 .innpage-project {
   margin-bottom: 38px;
 }
@@ -2552,6 +2567,12 @@ a {
   color: #feffff;
   width: calc(50% - 15px);
   padding: 14px 0;
+}
+.pgn_page-view:hover {
+  background-color: #656565;
+}
+.pgn_page-view:active {
+  background-color: #141414;
 }
 @media (min-width: 635px) {
   .pgn_page-view {

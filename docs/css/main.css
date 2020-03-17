@@ -671,8 +671,8 @@ a {
 }
 .title-image_inner {
   padding-bottom: 100%;
-  -webkit-box-shadow: 20px 20px 100px 0px #c4dbe9;
-          box-shadow: 20px 20px 100px 0px #c4dbe9;
+  -webkit-box-shadow: 20px 20px 50px 0px #c4dbe9;
+          box-shadow: 20px 20px 50px 0px #c4dbe9;
 }
 @media (min-width: 1200px) {
   .title-image_inner {
@@ -2151,25 +2151,17 @@ a {
 }
 .innpage {
   position: relative;
-  padding-top: 0px;
   padding-bottom: 0px;
-}
-@media (min-width: 580px) {
-  .innpage {
-    padding-top: 20px;
-  }
 }
 @media (min-width: 768px) {
   .innpage {
     width: 768px;
     margin: 0 auto;
-    padding-top: 30px;
   }
 }
 @media (min-width: 1200px) {
   .innpage {
     width: auto;
-    padding-top: 70px;
     background-image: url("../img/bg/line_1.jpg");
     background-size: auto;
     background-position: center;
@@ -2178,15 +2170,23 @@ a {
   }
 }
 .header-nav_innpage {
+  padding-top: 0px;
   margin-bottom: 50px;
+}
+@media (min-width: 580px) {
+  .header-nav_innpage {
+    padding-top: 20px;
+  }
 }
 @media (min-width: 768px) {
   .header-nav_innpage {
+    padding-top: 30px;
     margin-bottom: 50px;
   }
 }
 @media (min-width: 1200px) {
   .header-nav_innpage {
+    padding-top: 70px;
     margin-bottom: 85px;
   }
 }
@@ -2214,8 +2214,8 @@ a {
   }
 }
 .badge {
-  margin-right: 10px;
   padding: 3px 10px;
+  margin-right: 10px;
   font-size: 14px;
   font-weight: 800;
   font-family: "Roboto";

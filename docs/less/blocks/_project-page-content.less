@@ -1,24 +1,17 @@
 .innpage {
-    position: relative;
-    padding-top: 0px;
-    padding-bottom: 0px;
-
-    @media (min-width: 580px) {
-        padding-top: 20px;
-    }
+    position: relative;   
+    padding-bottom: 0px;   
 
     // Планшет
     @media (min-width: 768px) {
         width: 768px;
-        margin: 0 auto;
-        padding-top: 30px;
+        margin: 0 auto;       
     }
 
     // Десктоп
     @media (min-width: 1200px) {
         width: auto;
-        padding-top: 70px;
-
+        
         background-image: url("../img/bg/line_1.jpg");
         background-size: auto;
         background-position: center;
@@ -28,15 +21,22 @@
 }
 
 .header-nav_innpage {
+    padding-top: 0px;
     margin-bottom: 50px;
+
+    @media (min-width: 580px) {
+        padding-top: 20px;
+    }
 
     // Планшет
     @media (min-width: 768px) {
+        padding-top: 30px;
         margin-bottom: 50px;
     }
 
     // Десктоп
     @media (min-width: 1200px) {
+        padding-top: 70px;
         margin-bottom: 85px;
     }
 }
@@ -59,8 +59,8 @@
 }
 
 .badge {
-    margin-right: 10px;
     padding: 3px 10px;
+    margin-right: 10px;
     font-size: 14px;
     font-weight: 800;
     font-family: "Roboto";

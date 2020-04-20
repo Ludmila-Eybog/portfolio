@@ -2244,6 +2244,9 @@ a {
 .badge-boot {
   background-color: #a062c7;
 }
+.badge-wp {
+  background-color: #3f9879;
+}
 .badge-js {
   background-color: #ffd200;
   color: #000000;

@@ -10,7 +10,7 @@ $(document).ready(function () {
         begin: function () {},
         end: function () {},
         scrollChange: function ($currentListItem) {}
-    });
+    });    
 
     // фильтрация проекта
     $('.portfolio-works').mixItUp();

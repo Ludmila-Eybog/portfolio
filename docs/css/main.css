@@ -2365,10 +2365,6 @@ a {
     width: 350px;
   }
 }
-.forest-page {
-  -webkit-box-shadow: 20px 20px 100px 0px #c4dbe9;
-          box-shadow: 20px 20px 100px 0px #c4dbe9;
-}
 .unit-page {
   margin: 0 auto;
   max-width: 552px;
@@ -2412,6 +2408,15 @@ a {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+.forest-page {
+  -webkit-box-shadow: 20px 20px 100px 0px #c4dbe9;
+          box-shadow: 20px 20px 100px 0px #c4dbe9;
+}
+.teta-page {
+  width: auto;
+  -webkit-box-shadow: 10px 10px 80px #c4dbe9;
+          box-shadow: 10px 10px 80px #c4dbe9;
 }
 @media (min-width: 1200px) {
   .moto-page {

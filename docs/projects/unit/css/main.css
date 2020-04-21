@@ -1070,7 +1070,7 @@ ul {
   .section-price {
     padding: 70px 0 80px;
     background-color: #000000;
-    background-image: url("../../img/bg-price.jpg");
+    background-image: url("../img/bg-price.jpg");
   }
 }
 @media (min-width: 1200px) {
@@ -1395,7 +1395,7 @@ ul {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background-image: url(../../img/custom-arrow/arrow-left.svg);
+  background-image: url(../img/custom-arrow/arrow-left.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -1431,7 +1431,7 @@ ul {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background-image: url(../../img/custom-arrow/arrow-right.svg);
+  background-image: url(../img/custom-arrow/arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;

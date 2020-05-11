@@ -1,27 +1,70 @@
 /* ------------------- Calc ------------------- */
 .calc-wrapper {
-    padding-top: 100px;
-    padding-bottom: 75px;
+    /* padding-top: 50px; */
+    padding-top: 170px;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .calc-wrapper {
+        /* padding-top: 75px; */
+        padding-top: 200px;
+        padding-bottom: 55px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .calc-wrapper {
+        /* padding-top: 100px; */
+        padding-top: 245px;
+        padding-bottom: 75px;
+    }
 }
 
 .calc-heading {
     margin: 0;
-    margin-bottom: 50px;
-    font-size: 40px;
+    margin-bottom: 20px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.48px;
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .calc-heading {
+        margin-bottom: 35px;
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .calc-heading {
+        margin-bottom: 50px;
+    }
+}
+
+
 .calc-section {
-    padding: 40px 50px;
+    padding: 30px 20px;
     background-color: #f4f8fa;
 }
 
+@media (min-width: 768px) {
+    .calc-section {
+        padding: 40px 50px;
+    }
+}
+
 .calc-section:nth-child(odd) {
-    padding: 40px 50px;
+    padding: 30px 20px;
     background-color: #FFF;
+}
+
+@media (min-width: 768px) {
+    .calc-section:nth-child(odd) {
+        padding: 40px 50px;
+    }
 }
 
 .calc-title-light {
@@ -29,6 +72,7 @@
     font-weight: 300;
     margin-bottom: 15px;
 }
+
 .radio-wrapper {
     display: flex;
 }
@@ -80,9 +124,16 @@
 }
 
 .title-bold {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
+
+@media (min-width: 768px) {
+    .title-bold {
+        font-size: 24px;
+    }
+}
+
 
 .title-lite {
     font-size: 20px;
@@ -110,9 +161,17 @@
 
 /* ------------ PRICE ------------ */
 .calc-price {
-    margin-top: 20px;
-    padding: 40px 50px;
+    margin: 0;
+    padding: 30px 30px;
     border: 10px solid #7ac5ea;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .calc-price {
+        margin-top: 20px;
+        padding: 40px 50px;
+    }
 }
 
 .calc-price-title {

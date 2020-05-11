@@ -7,9 +7,12 @@
     flex-direction: row;
     justify-content: space-between;
 
+    padding: 0 20px;
     margin-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
+
+    @media (min-width: 580px) {
+        padding-top: 20px;
+    }
 
     // Планшет
     @media (min-width: 768px) {
@@ -22,12 +25,8 @@
     // Десктоп
     @media (min-width: 1200px) {
         margin-bottom: 170px;
-        padding: 0 15px;
+        padding: 70px 0 0 0;
         max-width: 1400px;
-    }
-
-    @media (min-width: 1440px) {
-        padding: 0;
     }
 }
 
@@ -165,11 +164,7 @@
 
     @media (min-width: 580px) {
         padding: 20px 25px;
-    }
-
-    @media (min-width: 768px) {
-        padding: 30px 25px;
-    }
+    }    
 
     @media (min-width: 1200px) {
         display:none;

@@ -30,33 +30,33 @@ body {
     }
 }
 
-// @media(min-width:1200px) {
-//     font-size: 24px;
-// }
-
 .noscroll {
     overflow: hidden;
-}
-
-a,
-a:hover {
-    text-decoration: none;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
 }
 
 h1,
 h2,
 h3,
 h4,
+h5,
 p,
+ul,
 span {
     margin: 0;
     padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    transition: .5s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 img {
@@ -72,10 +72,6 @@ input {
 
 button {
     cursor: pointer;
-}
-
-a {
-    transition: .5s;
 }
 
 .container {
@@ -97,14 +93,12 @@ a {
 
 .grid {
 
-    // Планшет
     @media (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin-left: -32px;
     }
 
-    // Десктоп
     @media (min-width: 1200px) {
         margin-left: -30px;
     }
@@ -112,25 +106,21 @@ a {
 
 .cell {
 
-    // Планшет
     @media (min-width: 768px) {
         padding-left: 32px;
     }
 
-    // Десктоп
     @media (min-width: 1200px) {
         padding-left: 30px;
     }
 }
 
-// Планшет
 @media (min-width: 768px) {
     .cell-6-12--tablet {
         width: 50%;
     }
 }
 
-// Десктоп
 @media (min-width: 1200px) {
     .cell-5-12--desktop {
         width: 41.66%;
@@ -180,12 +170,10 @@ a {
     left: -5px;
     right: -5px;
 
-    // Планшет
     @media (min-width: 768px) {
         bottom: 11px;
     }
 
-    // Десктоп
     @media (min-width: 1200px) {
         bottom: 21px;
     }
@@ -196,12 +184,10 @@ a {
     font-weight: 800;
     text-align: center;
 
-    // Планшет
     @media (min-width: 768px) {
         font-size: 52px;
     }
 
-    // Десктоп
     @media (min-width: 1200px) {
         font-size: 64px;
     }
@@ -211,12 +197,10 @@ a {
     margin-bottom: 40px;
     text-align: left;
 
-    // Планшет
     @media (min-width: 768px) {
         margin-bottom: 40px;
     }
 
-    // Десктоп
     @media (min-width: 1200px) {
         margin-bottom: 50px;
     }
@@ -226,13 +210,11 @@ a {
     margin-bottom: 45px;
     font-size: 38px;
 
-    // Планшет
     @media (min-width: 768px) {
         margin-bottom: 173px;
         font-size: 52px;
     }
 
-    // Десктоп
     @media (min-width: 1200px) {
         margin-bottom: 167px;
         font-size: 64px;
@@ -242,12 +224,10 @@ a {
 .contacts_title>.title-2 {
     margin-bottom: 38px;
 
-    // Планшет
     @media (min-width: 768px) {
         margin-bottom: 60px;
     }
 
-    // Десктоп
     @media (min-width: 1200px) {
         margin-bottom: 55px;
     }
@@ -268,12 +248,10 @@ a {
         background-color: var(--yellow);
         z-index: -1;
 
-        // Планшет
         @media (min-width: 768px) {
             bottom: 10px;
         }
 
-        // Десктоп
         @media (min-width: 1200px) {
             bottom: 15px;
         }
@@ -287,14 +265,12 @@ a {
     text-align: center;
     line-height: 1.2;
 
-    // Планшет
     @media (min-width: 768px) {
         margin-bottom: 43px;
         font-size: 42px;
         line-height: 1.2;
     }
 
-    // Десктоп
     @media (min-width: 1200px) {
         margin-bottom: 48px;
         font-size: 48px;
@@ -316,13 +292,11 @@ a {
         background-color: var(--yellow);
         z-index: -1;
 
-        // Планшет
         @media (min-width: 768px) {
             bottom: 5px;
             height: 12px;
         }
 
-        // Десктоп
         @media (min-width: 1200px) {
             bottom: 9px;
         }
@@ -332,7 +306,7 @@ a {
 .hide-desk {
 
     @media (min-width: 1200px) {
-        display: none;
+        // display: none;
     }
 }
 
@@ -342,13 +316,11 @@ a {
     font-weight: 800;
     line-height: 1.2;
 
-    // Планшет
     @media (min-width: 768px) {
         font-size: 32px;
         margin-bottom: 25px;
     }
 
-    // Десктоп
     @media (min-width: 1200px) {
         margin-top: -15px;
         margin-bottom: 32px;
@@ -362,19 +334,17 @@ a {
     margin-bottom: 9px;
     margin-top: 0;
 
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 800;
     line-height: 1.28;
     z-index: 1;
 
-    // Планшет
     @media (min-width: 768px) {
         margin-bottom: 8px;
         font-size: 22px;
         line-height: 1.2;
     }
 
-    // Десктоп
     @media (min-width: 1200px) {
         font-size: 26px;
         margin-bottom: 10px;

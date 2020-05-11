@@ -59,7 +59,7 @@ $(document).ready(function () {
         messages: {
             email: {
                 required: 'Введите Ваш email',
-                email: 'Отсутствует символ @'
+                email: 'Введите корректный email'
             },
             theme: {
                 required: 'Введите тему сообщения'

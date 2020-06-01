@@ -2,7 +2,7 @@
 
     "use strict";
 
-    var toggles = document.querySelectorAll(".cmn-toggle-switch");
+    var toggles = document.querySelectorAll("[data-nav-menu-toggle]");
 
     for (var i = toggles.length - 1; i >= 0; i--) {
         var toggle = toggles[i];
@@ -17,12 +17,12 @@
     }
     //-показать мобильное меню
     const bodyElement = document.querySelector('body')
-    const overlayElement = document.querySelector('#overlay')
-    const mobileMenuToggle = document.querySelector('#nav-menu-toggle')
-    const mobileMenu = document.querySelector('.mobile-nav')
+    const overlayElement = document.querySelector('[data-overlay]')
+    const mobileMenuToggle = document.querySelector('[data-nav-menu-toggle]')
+    const mobileMenu = document.querySelector('[data-mobile-nav]')
 
     mobileMenuToggle.addEventListener('click', function () {
-        
+
         if (this.classList.contains('active')) {
             mobileMenu.classList.add('active')
             overlayElement.classList.add('active')
@@ -36,7 +36,7 @@
     })
 
     mobileMenu.addEventListener('click', function () {
-        
+
         this.classList.remove('active')
         overlayElement.classList.remove('active')
         mobileMenuToggle.classList.remove('active')

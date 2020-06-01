@@ -381,7 +381,7 @@ button {
 @media (min-width: 1200px) {
   .header-nav {
     margin-bottom: 170px;
-    padding: 70px 0 0 0;
+    padding: 70px 20px 0 20px;
     max-width: 1400px;
   }
 }
@@ -475,7 +475,7 @@ button {
   -webkit-transition: none;
   transition: none;
 }
-#overlay {
+.overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -485,7 +485,7 @@ button {
   z-index: 9;
   display: none;
 }
-#overlay.active {
+.overlay.active {
   display: block;
 }
 .mobile-nav {
@@ -981,6 +981,9 @@ button {
 .portfolio-filter {
   margin-bottom: 50px;
 }
+.portfolio-works {
+  margin-bottom: 0;
+}
 @media (min-width: 768px) {
   .portfolio-works {
     margin-bottom: 40px;
@@ -1030,7 +1033,7 @@ button {
   }
 }
 .portfolio-view-big {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   max-width: 290px;
   -webkit-box-shadow: 0px 14px 28px rgba(11, 72, 99, 0.3);
           box-shadow: 0px 14px 28px rgba(11, 72, 99, 0.3);
@@ -1038,7 +1041,8 @@ button {
 @media (min-width: 768px) {
   .portfolio-view-big {
     margin-bottom: 0;
-    max-width: 338px;
+    max-width: 340px;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -1046,14 +1050,13 @@ button {
     max-width: 556px;
   }
 }
-.portfolio-view-big img {
-  background-color: #fdd446;
-}
 .img-link {
+  padding-bottom: 66.55%;
   position: relative;
   overflow: hidden;
+  display: block;
 }
-.img-link a:after {
+.img-link:after {
   content: '';
   position: absolute;
   top: 0;
@@ -1064,7 +1067,7 @@ button {
   opacity: 0;
   z-index: 1;
 }
-.img-link a .img-view {
+.img-link .img-view {
   content: '';
   position: absolute;
   top: 50%;
@@ -1087,51 +1090,65 @@ button {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.img-link a .img-view:hover {
+.img-link .img-view:hover {
   background-color: var(--red);
   color: #ffffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.img-link a .img-view:active {
+.img-link .img-view:active {
   background-color: #d4423b;
   color: #ffffff;
   opacity: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.img-link a:hover .img-view {
+.img-link:hover .img-view {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.img-link a:hover:before,
-.img-link a:hover:after {
+.img-link:hover:before,
+.img-link:hover:after {
   opacity: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+.img-image-teta {
+  -o-object-position: left;
+     object-position: left;
+}
+.img-image-moto {
+  -o-object-position: 90%;
+     object-position: 90%;
+}
+.img-image-visitka {
+  -o-object-position: 45%;
+     object-position: 45%;
+}
+.img-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fdd446;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .mix {
   display: none;
 }
 .portfolio-text {
+  padding: 10px 11px;
   background-color: #f3f2f2;
   border-bottom: 2px solid #dadada;
-  padding: 0 10px;
-  padding-top: 20px;
-  padding-bottom: 10px;
 }
 @media (min-width: 768px) {
   .portfolio-text {
-    padding: 0 10px;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding: 15px;
   }
 }
 @media (min-width: 1200px) {
   .portfolio-text {
-    padding: 0 10px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 20px;
   }
 }
 .link-top {
@@ -1140,7 +1157,7 @@ button {
   text-overflow: ellipsis;
 }
 .link-big {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 800;
   color: var(--black);
 }
@@ -1159,13 +1176,11 @@ button {
   }
 }
 .portfolio-view-big p {
-  padding-top: 3px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
 @media (min-width: 768px) {
   .portfolio-view-big p {
-    padding-top: 8px;
     font-size: 18px;
   }
 }
@@ -1176,29 +1191,27 @@ button {
   }
 }
 .portfolio-view-micro {
+  margin-bottom: 35px;
   width: 290px;
   -webkit-box-shadow: 0px 14px 28px rgba(11, 72, 99, 0.3);
           box-shadow: 0px 14px 28px rgba(11, 72, 99, 0.3);
 }
-.portfolio-view-micro:last-child {
-  margin-bottom: 37px;
-}
 @media (min-width: 768px) {
   .portfolio-view-micro {
-    width: 340px;
-  }
-  .portfolio-view-micro:last-child {
     margin-bottom: 0;
+    width: 340px;
   }
 }
 @media (min-width: 1200px) {
   .portfolio-view-micro {
     width: 360px;
-    height: auto;
+  }
+  .portfolio-view-micro:last-child {
+    margin-right: 390px;
   }
 }
 .link-micro {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 800;
   color: var(--black);
 }
@@ -1217,8 +1230,7 @@ button {
   }
 }
 .portfolio-view-micro p {
-  padding-top: 3px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
 @media (min-width: 768px) {
@@ -1419,12 +1431,6 @@ button {
     left: 0px;
     bottom: 0;
   }
-}
-.how-work_block:hover {
-  color: #ea736d;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  cursor: pointer;
 }
 @media (min-width: 768px) {
   .how-work_block {
@@ -1947,7 +1953,6 @@ button {
           box-shadow: none;
   border-radius: none;
   border: none;
-  cursor: pointer;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
 }
@@ -2031,24 +2036,24 @@ button {
           transition-delay: 0, 0.3s;
 }
 /******конец иконки Гамбургер******/
-#nav-menu-toggle {
+.nav-menu-toggle {
   position: absolute;
   top: 10px;
   right: 25px;
   display: block;
 }
 @media (min-width: 580px) {
-  #nav-menu-toggle {
+  .nav-menu-toggle {
     top: 32px;
   }
 }
 @media (min-width: 768px) {
-  #nav-menu-toggle {
+  .nav-menu-toggle {
     right: 40px;
   }
 }
 @media (min-width: 1200px) {
-  #nav-menu-toggle {
+  .nav-menu-toggle {
     display: none;
   }
 }
@@ -2178,7 +2183,7 @@ button {
 }
 @media (min-width: 1200px) {
   .innpage {
-    padding-top: 70px;
+    padding-top: 0px;
     width: auto;
     background-image: url("../img/bg/line_1.jpg");
     background-size: auto;
@@ -2197,7 +2202,7 @@ button {
 }
 @media (min-width: 1200px) {
   .header-nav_innpage {
-    margin-bottom: 85px;
+    margin-bottom: 120px;
   }
 }
 .badges {
@@ -2314,6 +2319,11 @@ button {
     margin-bottom: 0px;
   }
 }
+.innpage-left-shadow {
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 14px 28px rgba(11, 72, 99, 0.3);
+          box-shadow: 0px 14px 28px rgba(11, 72, 99, 0.3);
+}
 .innpage-right {
   margin: 0 auto;
   max-width: 400px;
@@ -2394,7 +2404,7 @@ button {
     display: block;
     position: absolute;
     top: -200px;
-    right: -25px;
+    right: -125px;
     -webkit-transform: scale(0.65);
             transform: scale(0.65);
     -webkit-box-shadow: 20px 20px 100px 15px #c4dbe9;
@@ -2404,7 +2414,7 @@ button {
 }
 @media (min-width: 1200px) {
   .unit-full_page {
-    top: 50px;
+    top: 45px;
     right: 0px;
     -webkit-transform: scale(1);
             transform: scale(1);

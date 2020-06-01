@@ -17,10 +17,11 @@
 </head>
 
 <body>
-    <div id="overlay"></div>
+    <div class="overlay" data-overlay></div>
+
     <header class="header bg-img relative">
         <!--  Gamburger-icon  -->
-        <!-- <button class="cmn-toggle-switch cmn-toggle-switch__htx" id="nav-menu-toggle">
+        <!-- <button class="cmn-toggle-switch cmn-toggle-switch__htx nav-menu-toggle" data-nav-menu-toggle>
             <span>toggle menu</span>
         </button> -->
         <!--  End Gamburger-icon  -->
@@ -76,53 +77,54 @@
             <div class="header__top-buttons">
                 <div class="container relative">
 
-                    <!-- Nav buttons -->
-                    <a id="nav-menu-toggle" class="header__nav-button" href="#!">
+                    <!-- Nav button -->
+                    <button class="header__nav-button" data-nav-menu-toggle>
                         <img src="./img/header/menu.svg" alt="Навигация">
-                    </a>
-                    <!--End Nav buttons -->
+                    </button>
+                    <!--End Nav button -->
 
-                    <!-- Search buttons -->
-                    <a class="header__search-button" href="#!">
+                    <!-- Search button -->
+                    <button class="header__search-button">
                         <img src="./img/header/search.svg" alt="Поиск">
-                    </a>
-                    <!--End Nav buttons -->
+                    </button>
+                    <!--End Search button -->
 
                 </div>
             </div>
 
-            <div class="header__center">
-                <div class="container">
-                    <div class="column-center">
-                        <h1 class="header__logo">ЮНИТ</h1>
+            <div class="container">
+                <div class="column-center">
+                    <h1 class="header__logo">ЮНИТ</h1>
 
-                        <div class="header__desc">
-                            <p>Управляй задачами и проектами из любой точки вместе с ЮНИТ.
-                                Дома. На работе. В дороге. Онлайн. Оффлайн.</p>
+                    <div class="header__desc">
+                        <p>Управляй задачами и проектами из любой точки вместе с ЮНИТ.
+                            Дома. На работе. В дороге. Онлайн. Оффлайн.</p>
+                    </div>
+
+                    <form class="header__form">
+                        <div class="header__form-input">
+                            <input type="text" class="input" placeholder="Ваше имя">
                         </div>
 
-                        <form class="header__form">
-                            <div class="header__form-input">
-                                <input type="text" class="input" placeholder="Ваше имя">
-                            </div>
+                        <div class="header__form-input">
+                            <input type="text" class="input" placeholder="Email">
+                        </div>
 
-                            <div class="header__form-input">
-                                <input type="text" class="input" placeholder="Email">
-                            </div>
+                        <div class="header__form-submit">
+                            <button class="button-submit">
+                                НАЧАТЬ ТРИАЛ
+                            </button>
+                        </div>
+                    </form>
 
-                            <div class="header__form-submit">
-                                <button class="button-submit">
-                                    НАЧАТЬ ТРИАЛ
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                    <a class="header__scroll" href="#scroll">
+                        <img src="img/header/scroll.svg" alt="Скролл">
+                    </a>
                 </div>
             </div>
 
-            <a class="header__scroll" href="#scroll">
-                <img src="img/header/scroll.svg" alt="Скролл">
-            </a>
+
+           
         </div>
     </header>
 

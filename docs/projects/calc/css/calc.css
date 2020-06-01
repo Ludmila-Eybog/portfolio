@@ -1,14 +1,14 @@
 /* ------------------- Calc ------------------- */
 .calc-wrapper {
-    /* padding-top: 50px; */
-    padding-top: 170px;
+    padding-top: 40px;
+    /* padding-top: 170px; */
     padding-bottom: 40px;
 }
 
 @media (min-width: 768px) {
     .calc-wrapper {
-        /* padding-top: 75px; */
-        padding-top: 200px;
+        padding-top: 55px;
+        /* padding-top: 200px; */
         padding-bottom: 55px;
     }
 }
@@ -34,13 +34,14 @@
 @media (min-width: 768px) {
     .calc-heading {
         margin-bottom: 35px;
-        font-size: 40px;
+        font-size: 36px;
     }
 }
 
 @media (min-width: 1170px) {
     .calc-heading {
         margin-bottom: 50px;
+        font-size: 40px;
     }
 }
 

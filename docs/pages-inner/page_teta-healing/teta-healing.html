@@ -12,88 +12,89 @@
 </head>
 
 <body>
-    <article class="innpage">
-        <div id="overlay"></div>
+    <div class="overlay" data-overlay></div>
 
-        <!-- mob-menu -->
-        <nav class="mobile-nav">
+    <!-- mob-menu -->
+    <nav class="mobile-nav" data-mobile-nav>
+        <div class="header-logo">
+            <a href="../../index.html">
+                ЛЕ
+            </a>
+        </div>
+
+        <ul>
+            <li class="menu-item_mobile-nav">
+                <a class="menu-item_mobile-link" href="../../index.html">
+                    Главная-Услуги</a>
+            </li>
+            <li class="menu-item_mobile-nav">
+                <a class="menu-item_mobile-link" href="../../index.html#works">
+                    Работы</a>
+            </li>
+            <li class="menu-item_mobile-nav">
+                <a class="menu-item_mobile-link" href="../../index.html#contact">
+                    Контакты</a>
+            </li>
+        </ul>
+
+        <!-- social-icons -->
+        <div class="social-icons social-icons_skills">
+            <a class="social-icons_gh" href="https://github.com/ludmila-eybog" target="_blank">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+
+            <a class="social-icons_vk" href="https://vk.com/id247602442" target="_blank">
+                <i class="fab fa-vk"></i>
+            </a>
+        </div>
+        <!-- End social-icons -->
+
+        <p>
+            <a class="about-me_link" href="mailto:ludm.nvkz@gmail.com">ludm.nvkz@gmail.com</a>
+        </p>
+    </nav>
+    <!-- End mob-menu -->
+
+    <header class="noscroll" id="header">
+        <div id="top"></div>
+        <!--  gamburger-icon  -->
+        <button class="cmn-toggle-switch cmn-toggle-switch__htx cmn-toggle_mobile nav-menu-toggle" data-nav-menu-toggle>
+            <span>toggle menu</span>
+        </button>
+        <!--  End gamburger-icon  -->
+
+        <!--  header-menu-->
+        <div class="header-nav header-nav_innpage">
             <div class="header-logo">
                 <a href="../../index.html">
                     ЛЕ
                 </a>
             </div>
 
-            <ul>
-                <li class="menu-item_mobile-nav">
-                    <a class="menu-item_mobile-link" href="../../index.html">
-                        Главная-Услуги</a>
-                </li>
-                <li class="menu-item_mobile-nav">
-                    <a class="menu-item_mobile-link" href="../../index.html#works">
-                        Работы</a>
-                </li>
-                <li class="menu-item_mobile-nav">
-                    <a class="menu-item_mobile-link" href="../../index.html#contact">
-                        Контакты</a>
-                </li>
-            </ul>
+            <div class="header-menu">
+                <a class="menu-item" href="../../index.html">
+                    Главная</a>
+                <a class="menu-item menu-item_change" href="../../index.html#works">
+                    Работы</a>
+                <a class="menu-item" href="../../index.html#contact">
+                    Контакты</a>
+            </div>
 
             <!-- social-icons -->
-            <div class="social-icons social-icons_skills">
-                <a class="social-icons_gh" href="https://github.com/ludmila-eybog" target="_blank">
+            <div class="social-icons_nav">
+                <a class="social-icons_nav--gh" href="https://github.com/ludmila-eybog" target="_blank">
                     <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
-
-                <a class="social-icons_vk" href="https://vk.com/id247602442" target="_blank">
-                    <i class="fab fa-vk"></i>
+                <a class="social-icons_nav--vk" href="https://vk.com/id247602442" target="_blank">
+                    <i class="fab fa-vk" aria-hidden="true"></i>
                 </a>
             </div>
             <!-- End social-icons -->
+        </div>
+        <!-- End header-menu -->
+    </header>
 
-            <p>
-                <a class="about-me_link" href="mailto:ludm.nvkz@gmail.com">ludm.nvkz@gmail.com</a>
-            </p>
-        </nav>
-        <!-- End mob-menu -->
-
-        <header class="noscroll" id="header" id="top">
-            <!--  gamburger-icon  -->
-            <button id="nav-menu-toggle" class="cmn-toggle-switch cmn-toggle-switch__htx cmn-toggle_mobile">
-                <span>toggle menu</span>
-            </button>
-            <!--  End gamburger-icon  -->
-
-            <!--  header-menu-->
-            <div class="header-nav header-nav_innpage">
-                <div class="header-logo">
-                    <a href="../../index.html">
-                        ЛЕ
-                    </a>
-                </div>
-
-                <div class="header-menu">
-                    <a class="menu-item" href="../../index.html">
-                        Главная</a>
-                    <a class="menu-item menu-item_change" href="../../index.html#works">
-                        Работы</a>
-                    <a class="menu-item" href="../../index.html#contact">
-                        Контакты</a>
-                </div>
-
-                <!-- social-icons -->
-                <div class="social-icons_nav">
-                    <a class="social-icons_nav--gh" href="https://github.com/ludmila-eybog" target="_blank">
-                        <i class="fab fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a class="social-icons_nav--vk" href="https://vk.com/id247602442" target="_blank">
-                        <i class="fab fa-vk" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <!-- End social-icons -->
-            </div>
-            <!-- End header-menu -->
-        </header>
-
+    <article class="innpage">
         <div class="container">
             <h3 class="title-3">
                 <span>Верстка сайта</span><br class="hide-desk">
@@ -103,10 +104,8 @@
             <div class="badges">
                 <div class="badge badge-html">HTML</div>
                 <div class="badge badge-css">CSS</div>
-                <!-- <div class="badge badge-boot">Bootstrap</div> -->
                 <div class="badge badge-js">JS</div>
                 <!-- <div class="badge badge-jquery">jQuery</div> -->
-                <!-- <div class="badge badge-php">PHP</div>                -->
             </div>
 
             <div class="innpage-row">
@@ -199,8 +198,10 @@
                 </a>
             </div>
         </div>
+    </article>
 
-        <footer class="innpage_footer">
+    <footer class="innpage_footer">
+        <div class="container">
             <p class="innpage_foot1">За созданием сайта</p>
             <p class="innpage_foot2">обращайтесь на
                 <a class="link-2" href="mailto:ludm.nvkz@gmail.com">ludm.nvkz@gmail.com</a>
@@ -229,14 +230,11 @@
                 </a>
             </div>
             <!--   End Кнопка быстрой прокрутки вверх   -->
-        </footer>
-    </article>
-
+        </div>
+    </footer>
 
     <script src="../../libs/jquery/jquery-3.0.0.min.js"></script>
     <script src="https://kit.fontawesome.com/9b72afda33.js"></script>
-    <!-- <script src="../../libs/mixitup2/jquery.mixitup.min.js"></script> -->
-    <!-- <script src="../../libs/jquery.validate/jquery.validate.js"></script> -->
     <script src="../../js/gamburger.js"></script>
     <script src="../../libs/nav.js/nav.js"></script>
     <script src="../../js/main.js"></script>

@@ -53,17 +53,19 @@ a:hover {
 /* ------------------- Header ------------------- */
 
 .header-inner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-
     padding-top: 30px;
     padding-bottom: 20px;
     background-color: #e3f0f7;
 }
 
 @media (min-width: 768px) {
+    .header-inner {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 1170px) {
     .header-inner {
         padding-top: 50px;
         padding-bottom: 40px;
@@ -72,6 +74,11 @@ a:hover {
 
 @media (min-width: 1170px) {
     .header-inner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -91,8 +98,7 @@ a:hover {
 }
 
 .heading-inner {
-    /* margin-bottom: 20px; */
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: #2d2f3b;
     letter-spacing: 0.26px;
@@ -101,9 +107,14 @@ a:hover {
 
 @media (min-width: 768px) {
     .heading-inner {
-        margin: 0;
-        font-size: 26px;
-        color: #000000;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .heading-inner {
+        /* font-size: 26px; */
+        font-size: 22px;
     }
 }
 
@@ -111,14 +122,28 @@ a:hover {
     position: relative;
     display: inline-block;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.38px;
     line-height: 1;
     z-index: 2;
 }
+
+@media (min-width: 768px) {
+    .heading-inner_underline {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .heading-inner_underline {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+}
+
 
 .heading-inner_underline::after {
     display: block;
@@ -209,7 +234,6 @@ a:hover {
         align-items: center;
     }
 }
-
 
 .social-icon-link:not(:last-child) {
     margin-right: 30px;

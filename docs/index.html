@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <div id="overlay"></div>
+    <div class="overlay" data-overlay></div>
 
     <!-- mob-menu -->
-    <nav class="mobile-nav">
+    <nav class="mobile-nav" data-mobile-nav>
         <div class="header-logo">
-            <a href="#!">
+            <a href="#header">
                 ЛЕ
             </a>
         </div>
@@ -67,7 +67,7 @@
             <a href="#howwork"></a>
         </li>
         <li>
-            <a href="#contacts"></a>
+            <a href="#contact"></a>
         </li>
     </ul>
     <!-- End Подсветка пагинации -->
@@ -75,7 +75,7 @@
     <header class="noscroll" id="header">
         <div id="top"></div>
         <!--  gamburger-icon  -->
-        <button class="cmn-toggle-switch cmn-toggle-switch__htx" id="nav-menu-toggle">
+        <button class="cmn-toggle-switch cmn-toggle-switch__htx nav-menu-toggle" data-nav-menu-toggle>
             <span>toggle menu</span>
         </button>
         <!--  End gamburger-icon  -->
@@ -83,13 +83,13 @@
         <!--  header-menu-->
         <div class="header-nav">
             <div class="header-logo">
-                <a href="#!">
+                <a href="#header">
                     ЛЕ
                 </a>
             </div>
 
             <div class="header-menu">
-                <a class="menu-item menu-item_change" href="#!">
+                <a class="menu-item menu-item_change" href="#header">
                     Главная</a>
                 <a class="menu-item" href="#works">
                     Работы</a>
@@ -227,11 +227,11 @@
                         </p>
                     </div>
                 </div>
-                <!--// content-row -->
+                <!-- End content-row -->
             </div>
         </section>
 
-        <section class="portfolio " id="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <div class="portfolio-row">
                     <div class="portfolio_title">
@@ -247,17 +247,18 @@
                     <a class="portfolio-work filter" data-filter=".wp" href="#!">WordPress</a>
                     <a class="portfolio-work filter" data-filter=".front" href="#!">Frontend</a>
                 </div> -->
+
                     <div class="portfolio-works">
                         <div class="portfolio-view-big wp front">
-                            <div class="img-link">
-                                <a href="./pages-inner/page_unit/unit.html" target="_blank">
-                                    <img class="img-big" src="./img/portfolio/unit.jpg" alt="Главная страница сайта “Юнит”">
-                                    <span class="img-view">Смотреть проект</span>
-                                </a>
-                            </div>
+                            <a class="img-link" href="./pages-inner/page_unit/unit.html">
+                                <img class="img-image" src="./img/portfolio/unit.jpg"
+                                    alt="Главная страница сайта “Юнит”">
+                                <span class="img-view">Смотреть проект</span>
+                            </a>
+
                             <div class="portfolio-text">
                                 <div class="link-top">
-                                    <a class="link-big" href="./pages-inner/page_unit/unit.html" target="_blank">
+                                    <a class="link-big" href="./pages-inner/page_unit/unit.html">
                                         Сайт для коворкинга "Юнит"
                                     </a>
                                 </div>
@@ -266,17 +267,17 @@
                         </div>
 
                         <div class="portfolio-view-big boot">
-                            <div class="img-link">
-                                <a href="./pages-inner/page_forest-travel/forest-travel.html" target="_blank">
-                                    <img src="./img/portfolio/forest-travel.jpg"
+                            <div>
+                                <a class="img-link" href="./pages-inner/page_forest-travel/forest-travel.html">
+                                    <img class="img-image" src="./img/portfolio/forest-travel.jpg"
                                         alt="Главная страница сайта “Форест тревел”">
                                     <span class="img-view">Смотреть проект</span>
                                 </a>
                             </div>
+
                             <div class="portfolio-text">
                                 <div class="link-top">
-                                    <a class="link-big" href="./pages-inner/page_forest-travel/forest-travel.html"
-                                        target="_blank">
+                                    <a class="link-big" href="./pages-inner/page_forest-travel/forest-travel.html">
                                         Сайт "Форест Тревел"
                                     </a>
                                 </div>
@@ -287,17 +288,15 @@
 
                     <div class="portfolio-works">
                         <div class="portfolio-view-big wp front">
-                            <div class="img-link">
-                                <a href="./pages-inner/page_teta-healing/teta-healing.html" target="_blank">
-                                    <img src="./img/portfolio/teta-healing.jpg"
-                                        alt="Главная страница сайта “Тета-Хилинг”">
-                                    <span class="img-view">Смотреть проект</span>
-                                </a>
-                            </div>
+                            <a class="img-link" href="./pages-inner/page_teta-healing/teta-healing.html">
+                                <img class="img-image img-image-teta" src="./img/portfolio/teta-healing.jpg"
+                                    alt="Главная страница сайта “Тета-Хилинг”">
+                                <span class="img-view">Смотреть проект</span>
+                            </a>
+
                             <div class="portfolio-text">
                                 <div class="link-top">
-                                    <a class="link-big" href="./pages-inner/page_teta-healing/teta-healing.html"
-                                        target="_blank">
+                                    <a class="link-big" href="./pages-inner/page_teta-healing/teta-healing.html">
                                         Современный лендинг "Тета-Хилинг"
                                     </a>
                                 </div>
@@ -308,20 +307,36 @@
 
                     <div class="portfolio-works">
                         <div class="portfolio-view-micro front">
-                            <div class="img-link">
-                                <a href="./pages-inner/page_motorcycle/motorcycle.html" target="_blank">
-                                    <img src="./img/portfolio/motorcycle.jpg" alt="Карточка мотоцикла">
-                                    <span class="img-view">Смотреть проект</span>
-                                </a>
-                            </div>
+                            <a class="img-link" href="./pages-inner/page_motorcycle/motorcycle.html">
+                                <img class="img-image img-image-moto" src="./img/portfolio/motorcycle.jpg"
+                                    alt="Карточка мотоцикла">
+                                <span class="img-view">Смотреть проект</span>
+                            </a>
+
                             <div class="portfolio-text">
                                 <div class="link-top">
-                                    <a class="link-micro" href="./pages-inner/page_motorcycle/motorcycle.html"
-                                        target="_blank">
+                                    <a class="link-micro" href="./pages-inner/page_motorcycle/motorcycle.html">
                                         Карточка для лендинга
                                     </a>
                                 </div>
-                                <p>Верстка карточки.</p>
+                                <p>Верстка карточки товара.</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-view-micro">
+                            <a class="img-link" href="./pages-inner/page_visitka/visitka.html">
+                                <img class="img-image img-image-visitka" src="./img/portfolio/visitka.jpg"
+                                    alt="Визитка">
+                                <span class="img-view">Смотреть проект</span>
+                            </a>
+
+                            <div class="portfolio-text">
+                                <div class="link-top">
+                                    <a class="link-micro" href="./pages-inner/page_visitka/visitka.html">
+                                        Визитка
+                                    </a>
+                                </div>
+                                <p>Верстка визитки.</p>
                             </div>
                         </div>
 
@@ -351,8 +366,8 @@
                         <p>Верстка лендинга.</p>
                     </div> -->
                     </div>
-                    <a class="portfolio-link" href="./pages-inner/page_unit/unit.html" target="_blank">Смотреть все
-                        работы</a>
+
+                    <a class="portfolio-link" href="./pages-inner/page_unit/unit.html">Смотреть все работы</a>
                 </div>
             </div>
         </section>

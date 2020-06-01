@@ -22,6 +22,10 @@ a:hover {
 ul {
   list-style-type: none;
 }
+button {
+  outline: none;
+  cursor: pointer;
+}
 .none {
   display: none;
 }
@@ -141,6 +145,7 @@ ul {
   height: 60px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
+  border: none;
   z-index: 11;
 }
 .header__nav-button:hover {
@@ -175,6 +180,7 @@ ul {
     height: 60px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
+    border: none;
   }
   .header__search-button:hover {
     background-color: rgba(80, 226, 163, 0.7);
@@ -236,13 +242,10 @@ ul {
 .header__scroll {
   display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (min-height: 650px) {
   .header__scroll {
     display: block;
-    position: absolute;
-    bottom: 120px;
-    left: 50%;
-    transform: translate(-50%);
+    margin-top: 120px;
     width: 32px;
     height: 48px;
   }
@@ -263,7 +266,6 @@ ul {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   border: none;
-  cursor: pointer;
   transition: background 0.3s;
 }
 .cmn-toggle-switch:focus {
@@ -328,7 +330,7 @@ ul {
   transition-delay: 0, 0.3s;
 }
 /******конец иконки Гамбургер******/
-#overlay {
+.overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -338,7 +340,7 @@ ul {
   z-index: 9;
   display: none;
 }
-#overlay.active {
+.overlay.active {
   display: block;
 }
 .noscroll {

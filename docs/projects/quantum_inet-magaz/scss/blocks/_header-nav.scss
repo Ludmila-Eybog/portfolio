@@ -1,0 +1,46 @@
+$border: 2px solid #f5f5f5;
+
+.header-nav {
+    display: flex;
+    border-left: $border;
+    border-right: $border;
+    height: 60px;
+}
+
+.header-nav__categories {
+    border-right: $border;
+}
+
+.header-nav__deals {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 38px;
+    padding-right: 38px;
+    border-right: $border;
+}
+
+.header-nav__link {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+    line-height: 1;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.header-nav__select {
+    display: flex;
+}
+
+.header-nav__select-item {
+    &:not(:last-child) {
+        border-right: $border;
+    }
+}

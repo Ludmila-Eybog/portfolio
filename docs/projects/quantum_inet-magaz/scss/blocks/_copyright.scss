@@ -1,0 +1,23 @@
+.copyright {
+    margin-right: 110px;
+    display: flex;
+}
+
+.copyright__item {
+        font-size: 14px;
+        font-weight: 500;
+        color: #b8b8b8;
+        line-height: 1;
+
+        &+& {
+            margin-left: 30px;
+        }
+
+        a {
+            color: inherit;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+}

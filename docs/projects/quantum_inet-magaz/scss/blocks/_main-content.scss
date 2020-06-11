@@ -1,0 +1,19 @@
+.main-content {}
+
+.main-row {
+    display: flex;
+}
+
+.main__column-left {
+    margin-right: 30px;
+    width: 255px;
+    flex-shrink: 0;
+
+    &>*+* {
+        margin-top: 30px;
+    }
+}
+
+.main__column-right {
+    flex-grow: 1;
+}

@@ -1032,6 +1032,20 @@ button {
     font-size: 28px;
   }
 }
+.portfolio-link {
+  color: var(--black);
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 500;
+}
+.portfolio-link:hover {
+  color: #039be3;
+  text-decoration: underline;
+}
+.portfolio-link:active {
+  color: #ea655f;
+  text-decoration: underline;
+}
 .portfolio-view-big {
   margin-bottom: 35px;
   max-width: 290px;
@@ -1049,6 +1063,9 @@ button {
   .portfolio-view-big {
     max-width: 556px;
   }
+}
+.mix {
+  display: none;
 }
 .img-link {
   padding-bottom: 66.55%;
@@ -1113,6 +1130,14 @@ button {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+.img-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fdd446;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .img-image-teta {
   -o-object-position: left;
      object-position: left;
@@ -1124,17 +1149,6 @@ button {
 .img-image-visitka {
   -o-object-position: 45%;
      object-position: 45%;
-}
-.img-image {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #fdd446;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.mix {
-  display: none;
 }
 .portfolio-text {
   padding: 10px 11px;
@@ -1243,20 +1257,6 @@ button {
     padding: 0;
     font-size: 20px;
   }
-}
-.portfolio-link {
-  color: var(--black);
-  text-decoration: underline;
-  font-size: 20px;
-  font-weight: 500;
-}
-.portfolio-link:hover {
-  color: #039be3;
-  text-decoration: underline;
-}
-.portfolio-link:active {
-  color: #ea655f;
-  text-decoration: underline;
 }
 .how-work {
   max-width: 400px;
@@ -2315,8 +2315,9 @@ button {
 @media (min-width: 1200px) {
   .innpage-left {
     margin-right: 0;
-    max-width: 552px;
     margin-bottom: 0px;
+    max-width: 552px;
+    height: 100%;
   }
 }
 .innpage-left-shadow {
@@ -2420,14 +2421,19 @@ button {
             transform: scale(1);
   }
 }
-.forest-page {
+.forest-page,
+.quantum-page {
   -webkit-box-shadow: 20px 20px 100px 0px #c4dbe9;
           box-shadow: 20px 20px 100px 0px #c4dbe9;
 }
+.forest-page img,
+.quantum-page img {
+  width: 100%;
+}
 .teta-page {
-  max-width: 498px;
   -webkit-box-shadow: 10px 10px 80px #c4dbe9;
           box-shadow: 10px 10px 80px #c4dbe9;
+  max-width: 498px;
 }
 @media (min-width: 1200px) {
   .moto-page {

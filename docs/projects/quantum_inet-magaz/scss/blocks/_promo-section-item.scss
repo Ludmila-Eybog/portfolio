@@ -1,0 +1,113 @@
+.promo-section__item-link-wrapper {
+    // display: block;
+}
+
+.promo-section-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+    max-width: 350px;
+    height: 330px;
+    text-align: center;
+
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease-in, transform 0.2s ease-in;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.promo-section-item__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #666666;
+    line-height: 1.5;
+}
+
+.promo-section-item__subtitle {
+    margin-bottom: 42px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #b3b3b3;
+    line-height: 1;
+}
+
+// Item with Background image
+
+.promo-section-item--bg-img {
+    justify-content: flex-end;
+    padding-bottom: 45px;
+
+    background-color: #3b4b48;
+    background-position: center;
+    background-size: cover;
+
+    .promo-section-item__title {
+        color: #fff;
+    }
+
+    .promo-section-item__subtitle {
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.promo-section-item--bg-img-watch {
+    background-color: #3b4b48;
+    background-image: url(./../img/promo/watch-bg.jpg);
+}
+
+// Item small size
+
+.promo-section-item-link-wrapper--column {
+    display: block;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.promo-section-item--small {
+    flex-direction: row;
+    align-items: center;
+
+    padding: 20px;
+    height: 150px;
+    text-align: left;
+
+    .promo-section-item__title {
+        margin: 0;
+        // margin-bottom: 0;
+        margin-right: 20px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #666666;
+        line-height: 2.14;
+    }
+}
+
+.promo-section-item__img-cell {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 116px;
+    height: 100%;
+    margin-right: 26px;
+    overflow: hidden;
+}
+
+.promo-section-item__title-cell {
+    display: flex;
+    align-items: center;
+}

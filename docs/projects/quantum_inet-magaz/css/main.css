@@ -1,0 +1,1288 @@
+@charset "UTF-8";
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/base/_mixins.scss */
+.navigation, .info-block, .tabs, .card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* line 8, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/base/_base.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* line 14, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/base/_base.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+}
+
+/* line 20, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/base/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 23, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/base/_base.scss */
+a:hover {
+  text-decoration: none;
+  color: #1875f0;
+}
+
+/* line 29, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/base/_base.scss */
+button {
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+/* line 35, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/base/_base.scss */
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+/* line 46, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/base/_base.scss */
+.hidden {
+  display: none;
+}
+
+/* line 50, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/base/_base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: 1;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header.scss */
+.header {
+  margin: 30px 0;
+  background-color: #fff;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* line 7, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header.scss */
+.header__container {
+  margin: 0 auto;
+  padding: 32px 20px;
+  max-width: 1110px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 16, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header.scss */
+.header__logo {
+  margin-right: 60px;
+}
+
+/* line 21, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header.scss */
+.header__search {
+  margin-right: 70px;
+  display: flex;
+  width: 466px;
+  height: 50px;
+  border: 2px solid #f5f5f5;
+  border-radius: 4px;
+}
+
+/* line 33, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header.scss */
+.header__search-input-wrapp {
+  width: 276px;
+  display: flex;
+  align-items: center;
+  border-right: 2px solid #f5f5f5;
+}
+
+/* line 40, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header.scss */
+.header__search-input {
+  padding: 0 20px;
+  height: 46px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #025aa6;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  line-height: 2.14;
+}
+
+/* line 53, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header.scss */
+.header__search-input::placeholder {
+  color: #b3b3b3;
+}
+
+/* line 58, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header.scss */
+.header__search-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  border-right: 2px solid #f5f5f5;
+}
+
+/* line 67, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header.scss */
+.header__search-btn-wrapper {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+/* line 72, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header.scss */
+.header__search-btn {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.45);
+}
+
+/* line 85, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header.scss */
+.header__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 90, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header.scss */
+.header__nav {
+  border-top: 2px solid #f5f5f5;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-select.scss */
+.header-select {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* line 14, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-select.scss */
+.header-select__title {
+  position: relative;
+  width: 100px;
+  font-size: 10px;
+  font-weight: 900;
+  color: #b3b3b3;
+  line-height: 1;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+/* line 24, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-select.scss */
+.header-select__title::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  display: block;
+  width: 8px;
+  height: 5px;
+  background-image: url("../img/icons/arrow-icon.svg");
+}
+
+/* line 37, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-select.scss */
+.header-select__dropdown {
+  position: absolute;
+  top: 100%;
+  left: -2px;
+  right: -2px;
+  border: 2px solid #f5f5f5;
+  border-radius: 0 0 4px 4px;
+  background-color: #ffffff;
+  z-index: 9;
+}
+
+/* line 49, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-select.scss */
+.header-select__dropdown-item {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #808080;
+  line-height: 1;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+/* line 67, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-select.scss */
+.header-select__dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* line 71, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-select.scss */
+.header-select__dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-link.scss */
+.header-link {
+  display: flex;
+  align-items: center;
+  color: #808080;
+}
+
+/* line 6, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-link.scss */
+.header-link:not(:last-child) {
+  margin-right: 35px;
+}
+
+/* line 10, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-link.scss */
+.header-link .icon-svg {
+  fill: gray;
+}
+
+/* line 14, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-link.scss */
+.header-link:hover {
+  color: #1875f0;
+}
+
+/* line 17, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-link.scss */
+.header-link:hover .icon-svg {
+  fill: #1875f0;
+}
+
+/* line 23, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-link.scss */
+.header-link_icon {
+  position: relative;
+  margin-right: 18px;
+  width: 21px;
+  height: 21px;
+}
+
+/* line 30, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-link.scss */
+.header-link--notify .header-link_icon::after {
+  position: absolute;
+  content: "";
+  top: -8px;
+  right: -7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1875f0;
+}
+
+/* line 41, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-link.scss */
+.header-link_text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* line 3, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-nav.scss */
+.header-nav {
+  display: flex;
+  border-left: 2px solid #f5f5f5;
+  border-right: 2px solid #f5f5f5;
+  height: 60px;
+}
+
+/* line 10, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-nav.scss */
+.header-nav__categories {
+  border-right: 2px solid #f5f5f5;
+}
+
+/* line 14, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-nav.scss */
+.header-nav__deals {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 38px;
+  padding-right: 38px;
+  border-right: 2px solid #f5f5f5;
+}
+
+/* line 23, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-nav.scss */
+.header-nav__link {
+  font-size: 14px;
+  font-weight: 500;
+  color: gray;
+  line-height: 1;
+}
+
+/* line 29, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-nav.scss */
+.header-nav__link:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* line 33, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-nav.scss */
+.header-nav__link:hover {
+  color: #1875f0;
+}
+
+/* line 38, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-nav.scss */
+.header-nav__select {
+  display: flex;
+}
+
+/* line 43, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-nav.scss */
+.header-nav__select-item:not(:last-child) {
+  border-right: 2px solid #f5f5f5;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-mega-menu-link.scss */
+.header-mega-menu-link {
+  display: flex;
+  align-items: center;
+  padding: 0 40px 0 30px;
+  height: 100%;
+  color: #808080;
+  text-decoration: none;
+}
+
+/* line 9, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-mega-menu-link.scss */
+.header-mega-menu-link:hover {
+  color: #1875f0;
+}
+
+/* line 12, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-mega-menu-link.scss */
+.header-mega-menu-link:hover svg {
+  fill: #1875f0;
+}
+
+/* line 18, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-mega-menu-link.scss */
+.header-mega-menu-link__icon {
+  margin-right: 22px;
+  padding-bottom: 5px;
+}
+
+/* line 22, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-mega-menu-link.scss */
+.header-mega-menu-link__icon svg {
+  fill: #808080;
+}
+
+/* line 27, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_header-mega-menu-link.scss */
+.header-mega-menu-link__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_logo.scss */
+.logo {
+  font-size: 22px;
+  font-weight: 900;
+  color: #4d4d4d;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.76px;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-dropdown.scss */
+.nav-dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* line 16, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-dropdown.scss */
+.nav-dropdown__title {
+  position: relative;
+  width: auto;
+  padding-right: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #b3b3b3;
+  line-height: 1;
+}
+
+/* line 27, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-dropdown.scss */
+.nav-dropdown__title-icon {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  display: block;
+  width: 8px;
+  height: 5px;
+  font-size: 0;
+}
+
+/* line 39, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-dropdown.scss */
+.nav-dropdown__title-icon svg {
+  fill: #b3b3b3;
+}
+
+/* line 44, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-dropdown.scss */
+.nav-dropdown__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -2px;
+  right: -2px;
+  border: 2px solid #f5f5f5;
+  border-radius: 0 0 4px 4px;
+  background-color: #ffffff;
+  z-index: 9;
+}
+
+/* line 61, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-dropdown.scss */
+.nav-dropdown:hover .nav-dropdown__title {
+  color: #1875f0;
+}
+
+/* line 65, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-dropdown.scss */
+.nav-dropdown:hover svg {
+  fill: #1875f0;
+}
+
+/* line 69, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-dropdown.scss */
+.nav-dropdown:hover .nav-dropdown__dropdown {
+  display: block;
+}
+
+/* line 74, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-dropdown.scss */
+a.nav-dropdown__dropdown-item {
+  padding-left: 28px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #808080;
+  line-height: 1;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+/* line 87, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-dropdown.scss */
+a.nav-dropdown__dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* line 91, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-dropdown.scss */
+a.nav-dropdown__dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel.scss */
+.carousel-section {
+  margin-bottom: 30px;
+}
+
+/* line 5, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel.scss */
+.carousel__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 330px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), url(../img/carousel/slide-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #1875f0;
+  border-radius: 6px;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* line 22, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel.scss */
+.carousel__item-title {
+  margin-bottom: 58px;
+  font-size: 36px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* line 30, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel.scss */
+.carousel__item-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 2.14;
+}
+
+/* line 36, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel.scss */
+.carousel__item-text p {
+  margin-bottom: 15px;
+}
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+/* line 9, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel-theme.scss */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 15, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel-theme.scss */
+.owl-theme .owl-nav [class*='owl-'] {
+  color: #FFF;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #D6D6D6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* line 26, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel-theme.scss */
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: #869791;
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* line 32, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel-theme.scss */
+.owl-theme .owl-nav .disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* line 39, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel-theme.scss */
+.owl-carousel.owl-theme .owl-nav .owl-prev,
+.owl-carousel.owl-theme .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ffffff23;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+/* line 57, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel-theme.scss */
+.owl-carousel.owl-theme .owl-nav .owl-prev {
+  left: 65px;
+  background-image: url(../img/carousel-icons/arrow-left.svg);
+}
+
+/* line 62, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel-theme.scss */
+.owl-carousel.owl-theme .owl-nav .owl-next {
+  right: 65px;
+  background-image: url(../img/carousel-icons/arrow-right.svg);
+}
+
+/* line 68, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel-theme.scss */
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px;
+}
+
+/* line 72, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel-theme.scss */
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+
+/* line 81, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel-theme.scss */
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 87, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel-theme.scss */
+.owl-theme .owl-dots .owl-dot span {
+  display: block;
+  width: 68px;
+  height: 2px;
+  margin: 10px 28px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+}
+
+/* line 99, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_carousel-theme.scss */
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  opacity: 1;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section.scss */
+.promo-section {
+  margin-bottom: 30px;
+}
+
+/* line 5, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section.scss */
+.promo-section__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 10, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section.scss */
+.promo-section__col {
+  width: 350px;
+}
+
+/* line 5, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  max-width: 350px;
+  height: 330px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease-in, transform 0.2s ease-in;
+}
+
+/* line 21, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* line 27, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #666666;
+  line-height: 1.5;
+}
+
+/* line 35, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item__subtitle {
+  margin-bottom: 42px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #b3b3b3;
+  line-height: 1;
+}
+
+/* line 45, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item--bg-img {
+  justify-content: flex-end;
+  padding-bottom: 45px;
+  background-color: #3b4b48;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 53, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item--bg-img .promo-section-item__title {
+  color: #fff;
+}
+
+/* line 57, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item--bg-img .promo-section-item__subtitle {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* line 63, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item--bg-img-watch {
+  background-color: #3b4b48;
+  background-image: url(./../img/promo/watch-bg.jpg);
+}
+
+/* line 70, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item-link-wrapper--column {
+  display: block;
+}
+
+/* line 73, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item-link-wrapper--column:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* line 78, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item--small {
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  height: 150px;
+  text-align: left;
+}
+
+/* line 86, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item--small .promo-section-item__title {
+  margin: 0;
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666666;
+  line-height: 2.14;
+}
+
+/* line 97, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item__img-cell {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 116px;
+  height: 100%;
+  margin-right: 26px;
+  overflow: hidden;
+}
+
+/* line 110, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_promo-section-item.scss */
+.promo-section-item__title-cell {
+  display: flex;
+  align-items: center;
+}
+
+/* line 3, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_main-content.scss */
+.main-row {
+  display: flex;
+}
+
+/* line 7, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_main-content.scss */
+.main__column-left {
+  margin-right: 30px;
+  width: 255px;
+  flex-shrink: 0;
+}
+
+/* line 12, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_main-content.scss */
+.main__column-left > * + * {
+  margin-top: 30px;
+}
+
+/* line 17, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_main-content.scss */
+.main__column-right {
+  flex-grow: 1;
+}
+
+/* line 5, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_navigation.scss */
+.navigation__list {
+  list-style: none;
+}
+
+/* line 9, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_navigation.scss */
+.navigation__item {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-bottom: 2px solid #f5f5f5;
+  color: #808080;
+  transition: 0.2s color ease-in;
+}
+
+/* line 18, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_navigation.scss */
+.navigation__item:last-child {
+  border-bottom: none;
+}
+
+/* line 22, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_navigation.scss */
+.navigation__item:hover {
+  color: #1875f0;
+  cursor: pointer;
+}
+
+/* line 26, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_navigation.scss */
+.navigation__item:hover .navigation__icon,
+.navigation__item:hover .navigation__arrow {
+  fill: #1875f0;
+}
+
+/* line 33, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_navigation.scss */
+.navigation__icon {
+  fill: #ccc;
+  transition: 0.2s fill ease-in;
+}
+
+/* line 38, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_navigation.scss */
+.navigation__arrow {
+  fill: #b5b5b5;
+  transition: 0.2s fill ease-in;
+}
+
+/* line 43, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_navigation.scss */
+.navigation__item-icon {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+}
+
+/* line 53, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_navigation.scss */
+.navigation__item-title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* line 59, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_navigation.scss */
+.navigation__item-arrow {
+  margin-left: auto;
+  padding-right: 20px;
+  color: #b5b5b5;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_info-block.scss */
+.info-block {
+  padding: 30px 20px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 13, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_info-block.scss */
+.info-block__title {
+  margin-bottom: 17px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #666666;
+  line-height: 1.5;
+}
+
+/* line 22, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_info-block.scss */
+.info-block__subtitle {
+  font-size: 14px;
+  color: #d1d1d1;
+  line-height: 2.143;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_tabs.scss */
+.tabs {
+  margin-bottom: 30px;
+  padding: 0px 40px;
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+
+/* line 11, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_tabs.scss */
+.tabs__btn {
+  height: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  color: #808080;
+  text-align: center;
+  line-height: 1;
+  background: transparent;
+  border: none;
+}
+
+/* line 22, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_tabs.scss */
+.tabs__btn + .tabs__btn {
+  margin-left: 50px;
+}
+
+/* line 26, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_tabs.scss */
+.tabs__btn:hover {
+  color: #1875f0;
+}
+
+/* line 31, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_tabs.scss */
+.tabs__btn--active {
+  color: #1875f0;
+  font-weight: 700;
+  border-bottom: 2px solid #1875f0;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* line 7, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.cards-wrapper > *:nth-child(-n+3) {
+  margin-bottom: 30px;
+}
+
+/* line 11, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.cards-wrapper > *:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+/* line 20, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card {
+  padding: 20px;
+  width: 255px;
+  height: 420px;
+}
+
+/* line 28, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__header {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 35, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__sale {
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  font-size: 10px;
+  font-weight: 900;
+  color: #b3b3b3;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* line 47, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__icon-btns {
+  display: flex;
+  align-items: center;
+}
+
+/* line 52, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__icon-btn {
+  border: none;
+  background: transparent;
+}
+
+/* line 56, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__icon-btn svg {
+  fill: #d8d6d6;
+}
+
+/* line 60, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__icon-btn:hover svg {
+  fill: #1875f0;
+}
+
+/* line 64, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__icon-btn + .card__icon-btn {
+  margin-left: 25px;
+}
+
+/* line 69, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__img {
+  margin-bottom: 30px;
+  height: 160px;
+  text-align: center;
+}
+
+/* line 75, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__title {
+  margin-bottom: 23px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666666;
+  line-height: 1.43;
+  text-align: center;
+}
+
+/* line 84, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__rating {
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 97, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__rating-star + .card__rating-star {
+  margin-left: 4px;
+}
+
+/* line 102, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__rating-value {
+  margin-left: 15px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #b3b3b3;
+  line-height: 1.67;
+  letter-spacing: 0.12px;
+}
+
+/* line 113, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 118, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__price {
+  margin-right: 17px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #666666;
+  line-height: 1.25;
+  letter-spacing: 0.16px;
+}
+
+/* line 127, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__icon-cart {
+  border: none;
+  background: transparent;
+}
+
+/* line 131, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__icon-cart svg {
+  fill: #e6e4e4;
+}
+
+/* line 135, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_card.scss */
+.card__icon-cart:hover svg {
+  fill: #1875f0;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_footer.scss */
+.footer {
+  background-color: #fff;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* line 6, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_footer.scss */
+.footer-top-wrapper {
+  border-bottom: 2px solid #f5f5f5;
+}
+
+/* line 10, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_footer.scss */
+.footer__row {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 45px;
+  padding-right: 84px;
+  padding-left: 80px;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-footer.scss */
+.nav-footer {
+  margin-left: 155px;
+  margin-right: 130px;
+  font-size: 16px;
+  color: #666666;
+  line-height: 1;
+  text-align: left;
+}
+
+/* line 10, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-footer.scss */
+.nav-footer__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+/* line 17, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-footer.scss */
+.nav-footer__list-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* line 28, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-footer.scss */
+.nav-footer__list-item:nth-child(2), .nav-footer__list-item:nth-child(3) {
+  margin-right: 55px;
+}
+
+/* line 34, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-footer.scss */
+.nav-footer__list-item-indent {
+  padding-left: 7px;
+  padding-right: 32px;
+  margin-right: 25px;
+  border: 2px solid transparent;
+}
+
+/* line 41, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-footer.scss */
+.nav-footer__list-item-indent:hover, .nav-footer__list-item-indent:active, .nav-footer__list-item-indent:focus {
+  border: 2px solid #f5f5f5;
+}
+
+/* line 48, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-footer.scss */
+.nav-footer__link {
+  position: relative;
+  width: auto;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666666;
+  line-height: 1.88;
+}
+
+/* line 58, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-footer.scss */
+.nav-footer-dropdown__title-icon {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  right: -20px;
+  display: block;
+  width: 10px;
+  height: 6px;
+  font-size: 0;
+}
+
+/* line 70, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-footer.scss */
+.nav-footer-dropdown__title-icon svg {
+  fill: #b3b3b3;
+}
+
+/* line 77, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-footer.scss */
+.nav-footer__list-item:hover .nav-footer__link {
+  color: #1875f0;
+}
+
+/* line 81, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-footer.scss */
+.nav-footer__list-item:hover svg {
+  fill: #1875f0;
+}
+
+/* line 85, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_nav-footer.scss */
+.nav-footer__list-item:hover .footer-dropdown__dropdown {
+  display: block;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_footer-dropdown.scss */
+.footer-dropdown__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -2px;
+  right: -2px;
+  width: max-content;
+  border: 2px solid #f5f5f5;
+  border-radius: 0 0 4px 4px;
+  background-color: #ffffff;
+  z-index: 9;
+}
+
+/* line 17, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_footer-dropdown.scss */
+a.footer-dropdown__dropdown-item {
+  padding: 0 7px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #808080;
+  line-height: 1;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+/* line 30, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_footer-dropdown.scss */
+a.footer-dropdown__dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* line 34, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_footer-dropdown.scss */
+a.footer-dropdown__dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_social.scss */
+.social {
+  display: flex;
+  align-items: center;
+}
+
+/* line 6, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_social.scss */
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+}
+
+/* line 13, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_social.scss */
+.social-item svg {
+  fill: #666;
+}
+
+/* line 16, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_social.scss */
+.social-item svg:hover {
+  fill: #1875f0;
+}
+
+/* line 21, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_social.scss */
+.social-item + .social-item {
+  margin-left: 32px;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_copyright.scss */
+.copyright {
+  margin-right: 110px;
+  display: flex;
+}
+
+/* line 6, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_copyright.scss */
+.copyright__item {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b8b8b8;
+  line-height: 1;
+}
+
+/* line 12, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_copyright.scss */
+.copyright__item + .copyright__item {
+  margin-left: 30px;
+}
+
+/* line 16, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_copyright.scss */
+.copyright__item a {
+  color: inherit;
+}
+
+/* line 19, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_copyright.scss */
+.copyright__item a:hover {
+  color: #1875f0;
+}
+
+/* line 1, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_payments.scss */
+.payments {
+  display: flex;
+  align-items: center;
+}
+
+/* line 6, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_payments.scss */
+.payments__text {
+  margin-right: 28px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #b8b8b8;
+  line-height: 1.5;
+}
+
+/* line 14, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_payments.scss */
+.payments__icons {
+  display: flex;
+  align-items: center;
+}
+
+/* line 19, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_payments.scss */
+.payments__icon {
+  cursor: pointer;
+}
+
+/* line 22, ../../Users/LE/Documents/HTML+CSS.Уроки/_Открытые уроки/project_quantum_inet-magaz/docs/scss/blocks/_payments.scss */
+.payments__icon + .payments__icon {
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

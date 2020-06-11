@@ -1,0 +1,138 @@
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    margin-bottom: 30px;
+
+    &>*:nth-child(-n+3) {
+        margin-bottom: 30px;
+    }
+
+    &>*:not(:nth-child(3n)) {
+        margin-right: 30px;
+    }
+
+    // &>*:last-child {
+    //     margin-right: auto;
+    // }
+}
+
+.card {
+    @extend %mixin-card;
+
+    padding: 20px;
+    width: 255px;
+    height: 420px;
+}
+
+.card__header {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__sale {
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+
+    font-size: 10px;
+    font-weight: 900;
+    color: #b3b3b3;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.card__icon-btns {
+    display: flex;
+    align-items: center;
+}
+
+.card__icon-btn {
+    border: none;
+    background: transparent;
+
+    svg {
+        fill: #d8d6d6;
+    }
+
+    &:hover svg {
+        fill: $blue;
+    }
+
+    &+& {
+        margin-left: 25px;
+    }
+}
+
+.card__img {
+    margin-bottom: 30px;
+    height: 160px;
+    text-align: center;
+}
+
+.card__title {
+    margin-bottom: 23px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666666;
+    line-height: 1.43;
+    text-align: center;
+}
+
+.card__rating {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: center;
+
+    // работает так же, как в нижнем селекторе
+    // & > * + * {
+    //     margin-left: 4px;
+    // }
+}
+
+.card__rating-star {
+
+    &+& {
+        margin-left: 4px;
+    }
+}
+
+.card__rating-value {
+    margin-left: 15px;
+    display: inline-block;
+
+    font-size: 12px;
+    font-weight: 500;
+    color: #b3b3b3;
+    line-height: 1.67;
+    letter-spacing: 0.12px;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.card__price {
+    margin-right: 17px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #666666;
+    line-height: 1.25;
+    letter-spacing: 0.16px;
+}
+
+.card__icon-cart {
+    border: none;
+    background: transparent;
+
+    svg {
+        fill: #e6e4e4;
+    }
+
+    &:hover svg {
+        fill: $blue;
+    }
+}

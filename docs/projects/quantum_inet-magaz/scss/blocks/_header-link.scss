@@ -1,0 +1,45 @@
+.header-link {
+    display: flex;
+    align-items: center;
+    color: #808080;
+
+    &:not(:last-child) {
+        margin-right: 35px;
+    }
+    
+    .icon-svg {
+        fill: gray;
+    }
+
+        &:hover {
+        color: $blue;
+
+        .icon-svg {
+            fill: $blue;
+        }
+    }
+}
+
+.header-link_icon {
+    position: relative;
+    margin-right: 18px;
+    width: 21px;
+    height: 21px;
+}
+
+.header-link--notify .header-link_icon::after {
+    position: absolute;
+    content: "";
+    top: -8px;
+    right: -7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $blue;
+}
+
+.header-link_text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}

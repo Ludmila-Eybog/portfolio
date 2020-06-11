@@ -146,9 +146,10 @@
     // Десктоп
     @media (min-width: 1200px) {
         margin-right: 0;
+        margin-bottom: 0px;
         max-width: 552px;
         // width: 652px;
-        margin-bottom: 0px;
+        height: 100%;
     }
 }
 
@@ -245,13 +246,22 @@
     }
 }
 
-.forest-page {
+.forest-page,
+.quantum-page {
     box-shadow: 20px 20px 100px 0px rgba(196, 219, 233, 1);
+
+    img {
+        width: 100%;
+    }
 }
 
 .teta-page {
-    max-width: 498px;
     box-shadow: 10px 10px 80px rgba(196, 219, 233, 1);
+    max-width: 498px;
+
+    img {
+        // width: 100%;
+    }
 }
 
 .moto-page {

@@ -10,13 +10,11 @@
      background-repeat: repeat-y;
      z-index: 1;
 
-     // Планшет
      @media (min-width: 768px) {
          padding-top: 70px;
          padding-bottom: 90px;
      }
 
-     // Десктоп
      @media (min-width: 1200px) {
          padding-top: 127px;
          padding-bottom: 150px;
@@ -38,7 +36,6 @@
  .contacts-row {
      // min-width: 290px;
 
-     // Планшет
      @media (min-width: 768px) {
          margin: 0 auto;
          max-width: 708px;
@@ -49,7 +46,6 @@
          align-items: flex-start;
      }
 
-     // Десктоп
      @media (min-width: 1200px) {
          max-width: 1140px;
      }
@@ -58,12 +54,10 @@
  .contacts-row_left {
      z-index: 3;
 
-     // Планшет
      @media (min-width: 768px) {
          width: 290px;
      }
 
-     // Десктоп
      @media (min-width: 1200px) {
          padding-top: 29px;
          width: 510px;
@@ -78,7 +72,6 @@
      hyphens: auto;
      // word-break: break-all;
 
-     // Планшет
      @media (min-width: 768px) {
          margin-top: -7px;
          margin-bottom: 30px;
@@ -87,7 +80,6 @@
          // word-break: normal;
      }
 
-     // Десктоп
      @media (min-width: 1200px) {
          margin-bottom: 42px;
          font-size: 20px;
@@ -100,12 +92,10 @@
      margin-bottom: 33px;
      font-size: 18px;
 
-     // Планшет
      @media (min-width: 768px) {
          margin-bottom: 32px;
      }
 
-     // Десктоп
      @media (min-width: 1200px) {
          margin-bottom: 45px;
      }
@@ -114,14 +104,12 @@
  .contacts-list_item {
      margin-bottom: 10px;
 
-     // Планшет
      @media (min-width: 768px) {
          display: flex;
          flex-direction: column;
          margin-bottom: 10px;
      }
 
-     // Десктоп
      @media (min-width: 1200px) {
          flex-direction: row;
          margin-bottom: 25px;
@@ -131,12 +119,10 @@
  .contacts-list_def {
      font-weight: 800;
 
-     // Планшет
      @media (min-width: 768px) {
          width: 290px;
      }
 
-     // Десктоп
      @media (min-width: 1200px) {
          margin-right: 100px;
          width: 94px;
@@ -168,14 +154,12 @@
      background: #ffffff;
      box-shadow: 0 28px 100px #c2dbeb;
 
-     // Планшет
      @media (min-width: 768px) {
          margin-top: 0;
          padding: 60px 27px 40px 27px;
          width: 340px;
      }
 
-     // Десктоп
      @media (min-width: 1200px) {
          padding: 81px 60px 42px 60px;
          margin-right: 22px;
@@ -185,148 +169,3 @@
 
  // ----    End list    ----
 
- // ----    form    ----
-
- .form-row {
-     margin-bottom: 25px;
-
-     position: relative;
-     font-weight: 700;
-
-     &:nth-last-child(2) {
-         margin-bottom: 13px;
-     }
-
-     @media (min-width: 768px) {
-         margin-bottom: 42px;
-
-         &:nth-last-child(2) {
-             margin-bottom: 13px;
-         }
-     }
-
-     @media (min-width: 1200px) {
-         margin-bottom: 65px;
-
-         &:nth-last-child(2) {
-             margin-bottom: 32px;
-         }
-     }
- }
-
- .form-row_input {
-     padding: 0 10px;
-     height: 42px;
-     width: 100%;
-
-     border: 0px;
-     border-bottom: 2px solid #eaeaea;
-
-     font-size: 18px;
-     font-weight: 700;
-     color: #000000;
-     resize: none;
-     outline: none;
-
-     &:focus {
-         border-bottom-color: var(--red);
-     }
- }
-
- .form-row_textarea {
-     padding: 10px;
-     width: 100%;
-     height: 155px;
-     border: 0px;
-     border-bottom: 2px solid #eaeaea;
-
-     font-size: 16px;
-     font-family: 'M PLUS 1p', sans-serif;
-     color: #000000;
-     resize: none;
-     outline: none;
-
-     &:focus {
-         border-bottom-color: var(--red);
-     }
-
-     @media (min-width: 768px) {
-         height: 120px;
-     }
-
-     @media (min-width: 1200px) {
-         height: 107px;
-         font-size: 18px;
-     }
- }
-
- .fake-placeholder {
-     position: absolute;
-     // top: 42px;
-     top: 14px;
-     left: 0px;
-
-     font-size: 16px;
-     color: #bcbcbc;
-     pointer-events: none;
-     transition: .5s;
-
-     @media (min-width: 768px) {
-         top: 4px;
-         font-size: 20px;
-     }
-
-     @media (min-width: 1200px) {
-         top: 2px;
-         font-size: 20px;
-     }
- }
-
- .fake-placeholder.active {
-     top: -25px;
-     font-size: 16px;
-     color: #ed9626;
-
-     @media (min-width: 768px) {
-         top: -25px;
-     }
-
-     @media (min-width: 1200px) {
-         top: -25px;
-         font-size: 18px;
-     }
- }
-
- .fake-placeholder_textarea {
-
-     @media (min-width: 768px) {
-         top: 35px;
-     }
-
-     @media (min-width: 1200px) {
-         top: -8px;
-     }
- }
-
- .error {
-     position: relative;
-     color: var(--red);
-     font-size: 16px;
-     font-weight: 600;
-
-     &:after {
-         content: '\f106';
-         font-family: fontAwesome;
-         position: absolute;
-         top: -13px;
-         left: 0;
-         font-size: 15px;
-     }
- }
-
- .contact-form_success {
-     text-align: center;
-     color: var(--red);
- }
-
- // ----    End form    ----

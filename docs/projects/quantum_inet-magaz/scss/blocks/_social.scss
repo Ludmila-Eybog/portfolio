@@ -1,0 +1,32 @@
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // display: inline-block;
+    width: 16px;
+
+    svg {
+        fill: #666;
+
+        &:hover {
+            fill: $blue;
+        }
+    }
+
+    &+& {
+        margin-left: 32px;
+    }
+
+    // &:not(:last-child) {
+    //     margin-right: 30px;
+    // }
+
+    // &:hover {
+    //     fill: $blue;
+    // }
+}

@@ -1,0 +1,37 @@
+.footer-dropdown__dropdown {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: -2px;
+    right: -2px;
+
+    width: max-content;
+    border: 2px solid #f5f5f5;
+    border-radius: 0 0 4px 4px;
+    background-color: #ffffff;
+
+    z-index: 9;
+}
+
+a.footer-dropdown__dropdown-item {
+    padding: 0 7px;
+
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #808080;
+    line-height: 1;
+    border-bottom: 2px solid #f5f5f5;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover {
+        background-color: #f1f1f1;
+    }
+}

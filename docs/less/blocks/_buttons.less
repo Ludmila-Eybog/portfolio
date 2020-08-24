@@ -1,11 +1,15 @@
 .button-link {
     display: inline-block;
     border-radius: 32px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     text-align: center;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     transition: background-color 0.2s ease;
+
+    @media (min-width: 768px) {
+    font-size: 22px;
+    }
 }
 
 .button-link_1 {
@@ -44,10 +48,11 @@
 }
 
 .button-link_calc {
-    padding: 15px 40px;
+    padding: 15px 20px;
     border-radius: 64px;
 
     @media (min-width: 330px) {
+    padding: 15px 40px;
         border-radius: 48px;
     }
 }

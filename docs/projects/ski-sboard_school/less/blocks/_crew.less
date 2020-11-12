@@ -1,0 +1,140 @@
+.teachers {
+    padding-top: 35px;
+    margin-top: -35px;
+
+    @media (min-width: 768px) {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 85px;
+        margin-top: -85px;
+        margin-bottom: 135px;
+    }
+}
+
+.teachers-row {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 480px) {
+        margin-top: 40px;
+        width: 440px;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+    @media (min-width: 768px) {
+        width: 600px;
+        justify-content: center;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 52px;
+        width: 100%;
+        flex-wrap: unset;
+        justify-content: space-between;
+    }
+}
+
+.teacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 480px) {
+        // margin: 0 15px;
+    }
+
+    @media (min-width: 768px) {
+        margin: 0 30px;
+
+        // &:nth-child(2n+1) {
+        //     margin-left: 85px;
+        //     margin-right: 28px;
+        // }
+
+        // &:nth-child(2n) {
+        //     margin-left: 28px;
+        //     margin-right: 85px;
+        // }
+    }
+
+    @media (min-width: 1200px) {
+        margin: 0;
+
+        // &:nth-child(2n+1) {
+        //     margin-left: 0px;
+        //     margin-right: 0px;
+        // }
+
+        // &:nth-child(2n) {
+        //     margin-left: 0px;
+        //     margin-right: 0px;
+        // }
+    }
+}
+
+.teacher-photo {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    background-color: #135bbc;
+    background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+
+    // overflow: hidden;
+
+    &::after {
+        content: '';
+        width: 95%;
+        height: 95%;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 6px solid rgba(255, 255, 255, .5);
+        transition: transform .15s, border-color .15s;
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 30px;
+        width: 240px;
+        height: 240px;
+    }
+}
+
+.teacher-photo:hover::after {
+    border: 6px solid #9eb4cd;
+    transform: scale(1.15);
+    transition: transform 0.2s cubic-bezier(0.06, 0.59, 0.24, 1.55), border-color 0.2s;
+}
+
+.teacher-photo__1 {
+    background-image: url(../image/teachers/teacher-1_m_DSCF6169.jpg);
+}
+
+.teacher-photo__2 {
+    background-image: url(../image/teachers/teacher-2_n_DSCF5939.jpg);
+}
+
+.teacher-photo__3 {
+    background-image: url(../image/teachers/teacher-3_DSCF1683.jpg);
+}
+
+.teacher-photo__4 {
+    background-image: url(../image/teachers/teachers-4_124658.jpg);
+}

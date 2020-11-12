@@ -1,0 +1,156 @@
+.contacts {
+    background-color: #2f2f2f;
+}
+
+.col-left {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 50px;
+    // max-width: 290px;
+    width: 290px;
+
+    @media (min-width: 768px) {
+        padding: 65px 0;
+        // max-width: 678px;
+        width: 380px;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 95px 0;
+        // max-width: 520px;
+        width: 520px;
+    }
+}
+
+.title-2_footer {
+    margin-left: 35px;
+    margin-bottom: 43px;
+    color: #fff;
+    text-align: left;
+
+    @media (min-width: 768px) {
+        margin-left: 0px;
+    }
+}
+
+// ----    list    ----
+.contacts-list {
+    margin-bottom: 55px;
+    padding-left: 35px;
+    max-width: 350px;
+
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    text-align: left;
+
+    @media (min-width: 768px) {
+        padding-left: 44px;
+        font-size: 18px;
+        letter-spacing: 0.3px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 65px;
+        padding-left: 45px;
+    }
+}
+
+.contacts-list_item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -31px;
+        top: 3px;
+        width: 18px;
+        height: 18px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.contacts-list_item-ringer::before {
+    background-image: url(../../image/icons-contact/icon-ringer.png);
+}
+
+.contacts-list_item-marker::before {
+    background-image: url(../../image/icons-contact/icons-marker.png);
+}
+
+.contacts-list_item-mail::before {
+    background-image: url(../../image/icons-contact/icons-mail.png);
+}
+
+.contacts-list_item-clock::before {
+    background-image: url(../../image/icons-contact/icons-clock.png);
+}
+
+.contacts-list_desc {
+    font-weight: 200;
+    color: #f7f7f7;
+}
+
+.contacts-list_desc a {
+    position: relative;
+    color: #f7f7f7;
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -1px;
+        width: 0%;
+        height: 1px;
+        background-color: #ffffff;
+    }
+
+    &:hover::after {
+        width: 100%;
+        transition: .2s;
+    }
+}
+
+// ----  End  list    ----
+
+.lower {
+    text-transform: lowercase;
+}
+
+.col-right {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+        margin-right: -600px;
+        flex-grow: 2;
+        overflow-x: hidden;
+    }
+
+    @media (min-width: 1200px) {
+        // margin-right: -110px;
+        margin-right: -120px;
+    }
+}
+
+.map {
+
+    @media (min-width: 768px) {
+        width: 100%;
+        height: 100%;
+        background-image: url(../image/footer-map/map-marker.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    @media (min-width: 1200px) {
+        width: 100%;
+    }
+}

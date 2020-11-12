@@ -66,6 +66,8 @@ input {
   outline: none;
 }
 button {
+  padding: 0;
+  border: none;
   cursor: pointer;
 }
 .container {
@@ -2446,6 +2448,87 @@ button {
   -webkit-box-shadow: 10px 10px 80px #c4dbe9;
           box-shadow: 10px 10px 80px #c4dbe9;
   max-width: 498px;
+}
+.sboard-page_1 {
+  -webkit-box-shadow: 20px 20px 100px 0px #c4dbe9;
+          box-shadow: 20px 20px 100px 0px #c4dbe9;
+}
+.sboard-page_1 img {
+  width: 100%;
+}
+.sboard-page_2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sboard-page_2 {
+    display: block;
+    position: absolute;
+    top: 170px;
+    left: 150px;
+    right: -150px;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-box-shadow: 20px 20px 100px 15px #c4dbe9;
+            box-shadow: 20px 20px 100px 15px #c4dbe9;
+    z-index: 4;
+  }
+}
+@media (min-width: 1200px) {
+  .sboard-page_2 {
+    top: 230px;
+    left: 120px;
+    right: -120px;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+}
+.sboard-page_3 {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .sboard-page_3 {
+    display: block;
+    position: absolute;
+    top: 365px;
+    left: -50px;
+    right: 50px;
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-box-shadow: 20px 20px 100px 15px #c4dbe9;
+            box-shadow: 20px 20px 100px 15px #c4dbe9;
+    z-index: 4;
+  }
+}
+.sboard-page_4 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sboard-page_4 {
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: -110px;
+    right: 110px;
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
+    -webkit-box-shadow: 20px 20px 100px 15px #c4dbe9;
+            box-shadow: 20px 20px 100px 15px #c4dbe9;
+    z-index: 3;
+  }
+}
+@media (min-width: 1200px) {
+  .sboard-page_4 {
+    display: block;
+    position: absolute;
+    top: 630px;
+    left: 120px;
+    right: -120px;
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-box-shadow: 20px 20px 100px 15px #c4dbe9;
+            box-shadow: 20px 20px 100px 15px #c4dbe9;
+    z-index: 3;
+  }
 }
 @media (min-width: 1200px) {
   .moto-page {

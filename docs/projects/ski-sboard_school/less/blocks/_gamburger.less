@@ -1,0 +1,42 @@
+/******иконка Гамбургер*****/
+.menu-icon {
+  position: fixed;
+  top: 30px;
+  right: 15px;
+  text-align: center;
+  // justify-content: center;
+  // align-items: center;
+
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.35);
+  // background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 11;
+  transition: background 0.5s;
+
+
+  &:hover {
+    // background-color: rgba(107, 179, 208, 0.7);
+    // background-color: rgba(102, 172, 205, 0.7);
+    background-color: hsla(197, 82%, 47%, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 768px) {
+    top: 45px;
+    right: 45px;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.menu-icon img {
+  margin: 0 auto;
+}
+
+/******конец иконки Гамбургер******/

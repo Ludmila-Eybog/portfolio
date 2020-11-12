@@ -1,0 +1,144 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.header {
+    margin-bottom: 45px;
+
+    position: relative;
+    min-height: 100vh;
+    background: radial-gradient(circle at 35% 50%, #487cab, #2e5386);
+    // background: radial-gradient(circle at 65% 15%, aqua, darkblue);
+
+    @media (min-width: 768px) {
+        margin-bottom: 55px;
+        min-height: auto;
+        height: 1080px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 85px;
+    }
+}
+
+.header-mount {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60vh;
+
+    background-image:
+        url(../image/header/heel_layer.png),
+        url(../image/header/mountains.png);
+    background-size: 100% auto, cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media (min-width: 768px) {
+        height: 100%;
+        background-size: 100% auto, auto;
+        background-position: bottom, center top 360px;
+    }
+
+    @media (min-width: 1200px) {
+        background-size: auto;
+    }
+
+    @media (min-width: 1920px) {
+        background-size: 100%;
+    }
+}
+
+.header-border {
+
+    @media (min-width: 768px) {
+        position: absolute;
+        right: -60px;
+        bottom: -150px;
+        // width: 54.58%;
+        // height: 69.44%;
+        width: 60%;
+        height: 65%;
+
+        background-image:
+            url(../image/header/boarder.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        // background-position: bottom right;
+    }
+
+    @media (min-width: 1200px) {
+        right: 3px;
+        bottom: 0px;
+        width: 54.58%;
+        height: 69.44%;
+        background-size: auto;
+    }
+}
+
+.header-titles {
+    margin-bottom: 50px;
+    font-family: "Catamaran";
+    color: rgba(254, 254, 254, 0.4);
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        margin-bottom: 200px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 97px;
+    }
+}
+
+.header-content {
+    margin: 0 15px;
+    // width: 240px;
+    width: 70%;
+    position: absolute;
+    z-index: 4;
+
+    @media (min-width: 768px) {
+        margin-left: 30px;
+        width: 400px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-left: 0;
+        width: 645px;
+    }
+}
+
+.motto {
+    margin-bottom: 80px;
+    // width: 280px;
+    font-size: 16px;
+    font-family: "Muli";
+    color: rgb(254, 254, 254);
+    line-height: 1.5;
+
+    @media (min-width: 768px) {
+        margin-bottom: 180px;
+        // width: 400px;
+        font-size: 20px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 47px;
+        // width: 645px;
+        font-size: 24px;
+    }
+}

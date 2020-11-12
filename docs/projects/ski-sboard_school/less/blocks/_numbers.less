@@ -1,0 +1,45 @@
+.number-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px) {
+
+        &:not(:last-child) {
+            margin-bottom: 0px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        &:not(:last-child) {
+            margin-right: 95px;
+        }
+    }
+}
+
+.number__value {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Catamaran";
+    color: #ff690f;
+    line-height: 1;
+
+    @media (min-width: 768px) {
+        font-size: 50px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 64px;
+    }
+}
+
+.number__desc {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Muli";
+}

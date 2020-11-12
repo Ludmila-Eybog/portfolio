@@ -98,7 +98,7 @@ $(document).ready(function () {
     $('#backTop').hide();
     
     $(window).scroll( function () {
-
+console.log('================================')
         if($(this).scrollTop() > 200){
             $('#backTop').fadeIn();
         }

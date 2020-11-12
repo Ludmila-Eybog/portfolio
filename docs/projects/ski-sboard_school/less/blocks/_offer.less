@@ -1,0 +1,99 @@
+.offer {
+    padding-top: 45px;
+    margin-top: -45px;
+    margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+        padding-top: 55px;
+        margin-top: -55px;
+        margin-bottom: 45px;
+        height: auto;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 85px;
+        margin-top: -85px;
+        margin-bottom: 150px;
+    }
+}
+
+.offer-text {
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    // width: 929px;  
+    max-width: 940px;
+    font-size: 16px;
+    font-family: "Muli";
+    color: rgb(86, 86, 86);
+    line-height: 1.4;
+    text-align: left;
+    letter-spacing: 0.2px;
+
+    @media (min-width: 768px) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.8;
+        letter-spacing: 0.05px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 30px;
+        margin-bottom: 53px;
+    }
+}
+
+.offer-row {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 1200px) {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(102, 172, 205, 0.1);
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 12px;
+        width: 32.8%;
+        // font-size: 15px;
+        background-color: #f7f7f7;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding: 11px;
+        width: 250px;
+    }
+}
+
+.card-icon {
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 37px;
+        height: 190px;
+    }
+}
+

@@ -7,15 +7,19 @@
   margin: 0;
   padding: 0;
 
-  width: 55px;
+  width: 50px;
   height: 40px;
   font-size: 0;
   // text-indent: -9999px;
   appearance: none;
   box-shadow: none;
-  border-radius: none;
   border: none;
   transition: background 0.3s;
+
+  @media (min-width: 768px) {
+    width: 55px;
+    height: 45px;
+  }
 }
 
 .cmn-toggle-switch:focus {
@@ -104,16 +108,18 @@
 
 .nav-menu-toggle {
   position: absolute;
-  top: 10px;
-  right: 25px;
+  top: 7px;
+  right: 15px;
   display: block;
 
   @media (min-width: 580px) {
-    top: 32px;
+    top: 18px;
+    right: 25px;
   }
 
   // Планшет
   @media (min-width: 768px) {
+    top: 20px;
     right: 40px;
   }
 

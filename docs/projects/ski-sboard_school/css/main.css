@@ -421,11 +421,15 @@ img {
   line-height: 1;
   letter-spacing: 0.7px;
 }
+@media (min-width: 400px) {
+  .title-2 {
+    text-align: center;
+  }
+}
 @media (min-width: 768px) {
   .title-2 {
     margin-left: 5px;
     font-size: 40px;
-    text-align: center;
   }
 }
 @media (min-width: 1200px) {
@@ -487,10 +491,11 @@ img {
   font-family: "Catamaran";
   color: #fefefe;
   text-transform: uppercase;
+  transition: 0.2s;
 }
 .button-header:hover {
-  background-color: rgba(255, 107, 15, 0.8);
-  transition: 0.2s;
+  background-color: #ff6201;
+  color: #fff;
 }
 @media (min-width: 768px) {
   .button-header {
@@ -499,8 +504,9 @@ img {
     box-shadow: rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
   }
   .button-header:hover {
-    background-color: rgba(255, 107, 15, 0.7);
-    box-shadow: rgba(254, 254, 254, 0.3) 0px 8px 15px 0px;
+    box-shadow: none;
+    transform: none;
+    background-color: #d86018;
   }
 }
 @media (min-width: 1200px) {
@@ -518,12 +524,12 @@ img {
   font-family: "Catamaran";
   color: #fefefe;
   text-transform: uppercase;
-  box-shadow: rgba(0, 0, 0, 0.8) 3px 3px 8px -4px;
-}
-.button-offer:hover {
-  background-color: rgba(255, 107, 15, 0.8);
   box-shadow: rgba(127, 127, 127, 0.6) 0px 8px 15px 0px;
   transition: 0.2s;
+}
+.button-offer:hover {
+  background-color: #d86018;
+  box-shadow: rgba(0, 0, 0, 0.8) 3px 3px 8px -4px;
 }
 #backTop a {
   display: none;
@@ -756,6 +762,8 @@ img {
   border-radius: 50%;
   background-color: #135bbc;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .teacher-photo::after {
   content: '';
@@ -832,13 +840,13 @@ img {
     max-width: 814px;
   }
 }
-.about-title {
+.title-2_about {
   color: #2f2f2f;
   text-align: left;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
-  .about-title {
+  .title-2_about {
     max-width: 665px;
   }
 }
@@ -1096,16 +1104,16 @@ img {
   background-position: center;
 }
 .contacts-list_item-ringer::before {
-  background-image: url(../../image/icons-contact/icon-ringer.png);
+  background-image: url(../image/icons-contact/icon-ringer.png);
 }
 .contacts-list_item-marker::before {
-  background-image: url(../../image/icons-contact/icons-marker.png);
+  background-image: url(../image/icons-contact/icons-marker.png);
 }
 .contacts-list_item-mail::before {
-  background-image: url(../../image/icons-contact/icons-mail.png);
+  background-image: url(../image/icons-contact/icons-mail.png);
 }
 .contacts-list_item-clock::before {
-  background-image: url(../../image/icons-contact/icons-clock.png);
+  background-image: url(../image/icons-contact/icons-clock.png);
 }
 .contacts-list_desc {
   font-weight: 200;
@@ -1160,6 +1168,7 @@ img {
 @media (min-width: 1200px) {
   .map {
     width: 100%;
+    background-position: 50%;
   }
 }
 .social-icons {
@@ -1183,6 +1192,7 @@ img {
 @media (min-width: 768px) {
   .social-icons-item svg {
     height: 30px;
+    fill: #979797;
   }
 }
 .social-icons-item + .social-icons-item {

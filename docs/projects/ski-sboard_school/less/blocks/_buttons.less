@@ -9,37 +9,31 @@
     font-family: "Catamaran";
     color: #fefefe;
     text-transform: uppercase;
+    transition: 0.2s;
 
     &:hover {
-        background-color: rgba(255, 107, 15, 0.8);
-        transition: 0.2s;
-        // transform: translateY(-5px);
+        background-color: #ff6201;
+        color: #fff;
+        // transform: translateY(-2px);
     }
 
     @media (min-width: 768px) {
         padding: 10px 30px;
         font-size: 18px;
-        // background: rgb(100, 100, 100) radial-gradient(circle at 0 0, rgba(255, 255, 255, .65), rgba(255, 255, 255, 0.35));
-
-        // background: rgb(255, 105, 15) radial-gradient(circle at 0 0, rgba(252, 229, 214, 0.3), rgba(252, 229, 214, 0));
         box-shadow:
             rgba(0, 0, 0, .8) 3px 3px 8px -3px;
 
         &:hover {
-            // box-shadow: 
-            // 0px 8px 15px 0px rgba(254, 254, 254, 0.5);
-
-            background-color: rgba(255, 107, 15, 0.7);
-            box-shadow:
-                rgba(254, 254, 254, 0.3) 0px 8px 15px 0px;
-            // transform: translateY(-7px);
+            box-shadow: none;
+            transform: none;
+            background-color: #d86018;
+            // background: rgb(100, 100, 100) radial-gradient(circle at 0 0, rgba(255, 255, 255, .65), rgba(255, 255, 255, 0.35));
         }
     }
 
     @media (min-width: 1200px) {
         padding: 15px 45px;
     }
-
 }
 
 .button-offer {
@@ -54,14 +48,13 @@
     font-family: "Catamaran";
     color: #fefefe;
     text-transform: uppercase;
-    box-shadow:
-        rgba(0, 0, 0, .8) 3px 3px 8px -4px;
+    box-shadow: rgba(127, 127, 127, 0.6) 0px 8px 15px 0px;
+    transition: 0.2s;
 
     &:hover {
-        // color: #2e538b;
-        background-color: rgba(255, 107, 15, 0.8);
-        box-shadow: rgba(127, 127, 127, 0.6) 0px 8px 15px 0px;
-        transition: 0.2s;
+        background-color: #d86018;
+        box-shadow:
+            rgba(0, 0, 0, .8) 3px 3px 8px -4px;
     }
 }
 
@@ -79,4 +72,3 @@
         cursor: pointer;
     }
 }
-

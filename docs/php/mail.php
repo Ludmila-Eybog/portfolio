@@ -62,7 +62,6 @@ echo "<div class='contact-form__success'>
 		<h2>Форма отправлена успешно!<br>
 		Мы свяжемся с&nbsp;Вами в&nbsp;ближайшее время!
 		</h2>
-
 	  </div> ";
 
 ?>

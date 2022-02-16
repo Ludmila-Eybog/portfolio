@@ -10,12 +10,22 @@ $(document).ready(function () {
         begin: function () {},
         end: function () {},
         scrollChange: function ($currentListItem) {}
-    });    
+    });
 
+    // ---------------------------
     // фильтрация проекта
     $('.portfolio-works').mixItUp();
 
-    // let allHideWorks = $('.hide-work');
+    // let allHideWorks = $('.hide-work'); // - скрытые в портфолио работы
+
+    // клик по кнопке "Показать все работы"
+    // $('#show-all-works').on('click', function () {
+    //     $(this).hide()
+    //     $.each(allHideWorks, function (key, item) {
+    //         $(item).show(500)
+    //     })
+    // })
+    // ---------------------------
 
     // ---  PLACEHOLDER
     const formRows = document.querySelectorAll('.form-row')
@@ -96,13 +106,11 @@ $(document).ready(function () {
 
     // BACK TOP BUTTON - Кнопка быстрой прокрутки вверх
     $('#backTop').hide();
-    
-    $(window).scroll( function () {
-console.log('================================')
-        if($(this).scrollTop() > 200){
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
             $('#backTop').fadeIn();
-        }
-        else{
+        } else {
             $('#backTop').fadeOut();
         }
     })
